@@ -1,0 +1,18 @@
+export const clients = [
+  { id: 'one',      name: 'ADND Architect',            logo: '/assets/images/clients/1.webp'      },
+  { id: 'two',      name: 'boAt AudioTech Company',     logo: '/assets/images/clients/2.webp'      },
+  { id: 'three', name: 'Decathlon Sports Brand',     logo: '/assets/images/clients/3.webp' },
+  { id: 'four', name: 'Fareshare NGO',              logo: '/assets/images/clients/4.webp' },
+  { id: 'five',    name: 'Godrej MNC',                 logo: '/assets/images/clients/5.webp'    },
+  { id: 'six',  name: 'Marriott Hotel',             logo: '/assets/images/clients/6.webp'  },
+  { id: 'seven',  name: 'Prestige',                   logo: '/assets/images/clients/7.webp'  },
+  { id: 'eight',      name: 'Tata',                       logo: '/assets/images/clients/8.webp'      },
+  { id: 'nine',      name: 'The Indian Luxury Expo',     logo: '/assets/images/clients/9.webp'      },
+  { id: 'ten',     name: 'Titan',                      logo: '/assets/images/clients/10.webp'     },
+  { id: 'elevn',  name: 'Tranzact Fintech',           logo: '/assets/images/clients/11.webp'  },
+  { id: 'twle',   name: 'Yashraj Films',              logo: '/assets/images/clients/12.webp'   },
+    { id: 'thirteen',      name: 'The Indian Luxury Expo',     logo: '/assets/images/clients/13.webp'      },
+  { id: 'fouteen',     name: 'Titan',                      logo: '/assets/images/clients/14.webp'     },
+  { id: 'fiftyn',  name: 'Tranzact Fintech',           logo: '/assets/images/clients/15.webp'  },
+  { id: 'sisten',   name: 'Yashraj Films',              logo: '/assets/images/clients/16.webp'   },
+];

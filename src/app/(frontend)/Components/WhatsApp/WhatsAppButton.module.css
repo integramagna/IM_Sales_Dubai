@@ -1,0 +1,38 @@
+/* Hidden on desktop and tablet — only visible on mobile */
+.btn {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .btn {
+        display: flex;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+        width: 49px;
+        height: 49px;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #82EEB0 0%, #047835 100%);
+        backdrop-filter: blur(51.48px);
+        -webkit-backdrop-filter: blur(51.48px);
+        padding: 7px 7.91px 9.48px 7.91px;
+        box-sizing: border-box;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn:hover {
+        transform: scale(1.06);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .btn svg {
+        width: 32px;
+        height: 32px;
+        flex-shrink: 0;
+    }
+}

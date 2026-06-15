@@ -1,0 +1,188 @@
+/* Desktop (default) */
+.main {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top {
+    padding: 70px 25px 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.top h1 {
+    font-family: var(--font-pretendard);
+    font-weight: 400;
+    color: #4E4E4E;
+    font-size: 26px;
+}
+
+.Logos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Logos img {
+    width: auto;
+    height: 75px;
+}
+
+.mid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: fit-content;
+    align-items: flex-start;
+    padding: 0 clamp(24px, 9vw, 115px) clamp(80px, 8vw, 120px);
+}
+
+.Heading {
+    /* padding-left: 25px; */
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.heroHeading {
+    font-family: var(--font-pretendard);
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: black;
+}
+
+.italicText {
+    font-family: var(--font-awesome-serif);
+}
+
+.Marquee {
+    display: none;
+}
+
+.MarqueeTrack {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    margin-bottom: 20px;
+    animation: marqueeLeft 10s linear infinite;
+}
+
+.MarqueeTrack img {
+    width: 260px;
+    height: auto;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+@keyframes marqueeLeft {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+
+.MarqueeTrackAnti {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    animation: marqueeRight 12s linear infinite;
+}
+
+.MarqueeTrackAnti img {
+    width: 260px;
+    height: auto;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+@keyframes marqueeRight {
+    from { transform: translateX(-50%); }
+    to   { transform: translateX(0); }
+}
+
+.divider {
+    display: block;
+    width: 1px;
+    height: 55px;
+    background-color: #ccc;
+    flex-shrink: 0;
+}
+
+.DesktopGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.GridRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.GridRow img {
+    width: clamp(160px, 18vw, 260px);
+    height: auto;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .main {
+        align-items: unset;
+    }
+
+    .top {
+        justify-content: unset;
+        align-items: unset;
+    }
+
+    .top h1 {
+        font-size: 20px;
+    }
+
+    .Logos {
+        justify-content: space-between;
+        gap: unset;
+    }
+
+    .Logos img {
+        height: 55px;
+    }
+
+    .mid {
+        padding: 0 0 40px;
+        align-items: unset;
+    }
+
+    .Heading {
+        padding-left: 24px;
+    }
+
+    .heroHeading {
+        font-size: 28px;
+    }
+
+    .Marquee {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .DesktopGrid {
+        display: none;
+    }
+}
