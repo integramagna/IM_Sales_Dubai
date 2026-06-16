@@ -144,6 +144,10 @@
     font-weight: 400;
 }
 
+.mobileOnly {
+    display: none;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
     .content {
@@ -241,6 +245,14 @@
     .arrowIcon {
         width: 29px;
         height: 29px;
+    }
+
+    .desktopOnly {
+        display: none;
+    }
+
+    .mobileOnly {
+        display: block;
     }
 
     /* Hide SVGs — replaced by CSS */

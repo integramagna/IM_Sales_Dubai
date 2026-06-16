@@ -7,6 +7,8 @@ import oil from "./oil.png"
 import icecream1 from "./icecream1.png"
 
 import besan from "./besan.png"
+import besanArrow from "./besanArrow.png"
+import icecreamArrow from "./icecreamArrow.png"
 
 export default function HomePage() {
     useEffect(() => {
@@ -64,7 +66,8 @@ export default function HomePage() {
                             <h2 className={styles.txtpara}>More customers chose Zuno over competitors on the same shelf.</h2>
                         </div>
                         <div className={styles.imgWrapper}>
-                            <Image src={icecream1} alt="icecream" />
+                            <Image className={styles.desktopOnly} src={icecream1} alt="icecream" />
+                            <Image className={styles.mobileOnly} src={icecreamArrow} alt="icecream" />
                             {/* <svg className={styles.lineFlipped} width="146" height="65" viewBox="0 0 146 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M-0.00260425 62.2534..." fill="black" />
                             </svg> */}
@@ -73,7 +76,8 @@ export default function HomePage() {
 
                     <div className={`${styles.cell1} ${styles.left}`}>
                         <div className={styles.imgWrapper}>
-                            <Image src={besan} alt="besan" />
+                            <Image className={styles.desktopOnly} src={besan} alt="besan" />
+                            <Image className={styles.mobileOnly} src={besanArrow} alt="besan" />
                             {/* <svg className={styles.line} width="146" height="65" viewBox="0 0 146 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M-0.00260425 62.2534..." fill="black" />
                             </svg> */}
