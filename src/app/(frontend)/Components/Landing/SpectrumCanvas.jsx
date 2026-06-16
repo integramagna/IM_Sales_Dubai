@@ -29,8 +29,6 @@ const preloadImages = (arr) => {
   });
 };
 
-// Mounted only AFTER the page has loaded — so during the LCP window the
-// mobile hero is nothing but the static poster image.
 const HeroVideo = () => {
   const ref = useRef(null);
   const [ready, setReady] = useState(false);

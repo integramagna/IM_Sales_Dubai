@@ -33,7 +33,7 @@ export default function Packaging() {
                         </div>
                     </div>
                     <div className={styles.bottom}>
-                        <h1 className={styles.Choose}>Why choose us ? </h1>
+                        <h1 className={styles.Choose} style={{fontFamily:"var(--font-awesome-serif)", fontSize:"28px"}}>Why choose us ? </h1>
                         <div className={styles.uls}>
                             <div className={styles.ul}>
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

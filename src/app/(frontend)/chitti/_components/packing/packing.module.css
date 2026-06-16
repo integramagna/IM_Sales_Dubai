@@ -168,9 +168,13 @@
     }
 
     .bottom h1 {
-        font-family: var(--font-awesome-serif);
+        font-family: var(--font-pretendard);
         font-weight: 500;
-        font-size: 28px;
+        font-size: 22px;
+    }
+
+    .choose h1 {
+        font-family: var(--font-awesome-serif);
     }
 
     .uls {
