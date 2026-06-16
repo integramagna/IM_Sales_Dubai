@@ -172,4 +172,35 @@
         font-weight: 500;
         font-size: 28px;
     }
+
+    .uls {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        position: relative;
+        /* add this */
+    }
+
+    .uls::before {
+        content: '';
+        position: absolute;
+        left: 7px;
+        top: 18px;
+        bottom: 8px;
+        width: 2px;
+        background: repeating-linear-gradient(to bottom,
+                #FA7598 0px,
+                #FA7598 5px,
+                transparent 5px,
+                transparent 10px);
+    }
+
+    .ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        position: relative;
+        z-index: 1;
+    }
 }

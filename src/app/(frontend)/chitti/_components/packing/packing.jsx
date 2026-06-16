@@ -28,8 +28,6 @@ export default function Packaging() {
                                         <rect x="2" y="2" width="24" height="24" rx="12" fill="black" />
                                         <path d="M10.4913 9.83685L18.4462 9.83685L18.4462 17.7918M17.8938 10.3893L9.82836 18.4547" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
-
-
                                 </div>
                             </div>
                         </div>
