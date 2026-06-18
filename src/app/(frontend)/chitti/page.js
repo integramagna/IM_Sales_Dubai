@@ -8,6 +8,8 @@ import ContactCopy from "./_components/ContactCopy/ContactCopy";
 import FAQS from "./_components/FAQCopy/FAQCopy";
 import Grid from "./_components/Grids/Grids";
 import Footer from "./_components/footerCopy/footerCopy";
+import StickyCta from "./_components/StickyCta/StickyCta";
+
 export default function Chitti() {
     return (
         <>
@@ -20,8 +22,9 @@ export default function Chitti() {
             <ContactCopy />
             <FAQS />
             <Grid />
+            <div id="footer-sentinel" style={{ height: '1px' }} />
             <Footer />
-
+            <StickyCta />
         </>
     )
 }

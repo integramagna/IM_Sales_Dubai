@@ -62,20 +62,16 @@ export default function Brand() {
                             <Image src={marq5} alt="marq5" />
                         </div>
                     </div>
-                    {/* Desktop: static grid 4+4 */}
-                    <div className={styles.DesktopGrid}>
-                        <div className={styles.GridRow}>
-                            <Image src={marq1} alt="marq1" />
-                            <Image src={marq2} alt="marq2" />
-                            <Image src={marq3} alt="marq3" />
-                            <Image src={marq4} alt="marq4" />
-                        </div>
-                        <div className={styles.GridRow}>
-                            <Image src={marq2} alt="marq2" />
-                            <Image src={marq3} alt="marq3" />
-                            <Image src={marq4} alt="marq4" />
-                            <Image src={marq5} alt="marq5" />
-                        </div>
+                    {/* Desktop: grid layout */}
+                    <div className={styles.mainContainer}>
+                        <Image src={marq1} alt="marq1" />
+                        <Image src={marq2} alt="marq2" />
+                        <Image src={marq3} alt="marq3" />
+                        <Image src={marq4} alt="marq4" />
+                        <Image src={marq2} alt="marq2" />
+                        <Image src={marq3} alt="marq3" />
+                        <Image src={marq4} alt="marq4" />
+                        <Image src={marq5} alt="marq5" />
                     </div>
                 </div>
                 {/* </div> */}

@@ -25,27 +25,28 @@ export default function Black() {
                                 <Image src={gridHead} alt="gridhead" />
                             </div>
                             <div className={`${styles.cell} ${styles.green}`}>
-                                <h1 className={styles.gridText}>Beauty & Skincare</h1>
+                                <h1 className={styles.gridText}>Snacks & Namkeen</h1>
                                 <Image src={bottle} alt="gridhead" />
                             </div>
                             <div className={`${styles.cell} ${styles.blue}`}>
-                                <h1 className={styles.gridText}>Baby & Wellness</h1>
+                                <h1 className={styles.gridText}>Beauty & Skincare</h1>
                                 <Image src={surgeCup} alt="gridhead" />
                             </div>
                             <div className={`${styles.cell} ${styles.grey}`}>
-                                <h1 className={styles.gridText}>Spices & Staples</h1>
+                                <h1 className={styles.gridText}>Baby & Wellness</h1>
                                 <Image src={surgeCup} alt="gridhead" />
                             </div>
                             <div className={`${styles.cell} ${styles.yellow}`}>
-                                <h1 className={styles.gridText}>D2C & Gifting</h1>
+                                <h1 className={styles.gridText}>Supplements Dairy
+                                    & Frozen</h1>
                                 <Image src={surgeCup} alt="gridhead" />
                             </div>
                             <div className={`${styles.cell} ${styles.green}`}>
-                                <h1 className={styles.gridText}>Snacks & Namkeen</h1>
+                                <h1 className={styles.gridText}>Spices & Staples</h1>
                                 <Image src={surgeCup} alt="gridhead" />
                             </div>
                             <div className={`${styles.cell} ${styles.purple}`}>
-                                <h1 className={styles.gridText}>Supplements Dairy & Frozen</h1>
+                                <h1 className={styles.gridText}>D2C & Gifting</h1>
                                 <Image src={surgeCup} alt="gridhead" />
                             </div>
                         </div>

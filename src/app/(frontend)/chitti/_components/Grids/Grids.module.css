@@ -26,7 +26,7 @@
 .mainContainer img {
     width: 100%;
     height: auto;
-    border-radius: 12px;
+    border-radius: 5px;
     object-fit: cover;
 }
 
@@ -35,7 +35,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 10px;
     gap: 25px;
     /* width:1109px; */
     padding: 40px 30px;
@@ -146,8 +146,8 @@
 @media (max-width: 640px) {
     .content {
         flex-direction: column;
-        gap: 30px;
-        padding: 40px 24px 60px;
+        gap: 70px;
+        padding: 70px 24px 70px;
     }
 
     .mainContainer {

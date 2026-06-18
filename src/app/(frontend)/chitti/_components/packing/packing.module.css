@@ -21,7 +21,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 10px;
     gap: 25px;
     /* max-width: 1109px; */
     padding: 40px 30px;
@@ -41,7 +41,7 @@
 
 .heading {
     font-family: var(--font-pretendard), sans-serif;
-    font-size: 24px;
+    font-size: 34px;
     color: rgb(255, 255, 255);
     font-weight: 400;
     display: flex;
@@ -57,9 +57,9 @@
 
 .para1 {
     text-align: left;
-    font-size: 18px;
+    font-size: 26px;
     font-family: var(--font-pretendard);
-    width: 60%;
+    width: 90%;
 }
 
 .Quote {
@@ -73,7 +73,7 @@
     justify-content: space-between;
     border: 1px solid black;
     border-radius: 80px;
-    padding-left: 10px;
+    padding:    10px 10px 10px 18px;
     flex-shrink: 0;
     white-space: nowrap;
 }
@@ -93,7 +93,7 @@
 }
 
 .txt0 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     font-family: var(--font-pretendard);
 }
@@ -149,16 +149,19 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        font-size:24px;
     }
 
     .para1 {
         text-align: center;
         width: unset;
+        font-size:18px;
     }
 
     .Quote {
         flex-shrink: unset;
         white-space: unset;
+        
     }
 
     .bottom {
@@ -191,7 +194,7 @@
         position: absolute;
         left: 7px;
         top: 18px;
-        bottom: 32px;
+        bottom: 22px;
         width: 2px;
         background: repeating-linear-gradient(to bottom,
                 #FA7598 0px,

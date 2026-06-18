@@ -266,6 +266,10 @@ a {
     position: relative;
     width: fit-content;
 }
+
+.mobile-whatsapp-cta {
+    display: none !important;
+}
 .openButton button {
     font-family: var(--font-pretendard);
     font-size: 14px;
@@ -349,7 +353,7 @@ a {
 
 @media screen and (min-width:640px) and (max-width:1200px) {
     .navlinks {
-        width: 473px
+        display:none;
     }
 }
 
@@ -381,9 +385,11 @@ a {
     }
 
  .openButton {
-    z-index: 1001 !important;
-    display: block;
-    width: fit-content;
+    display: none;
+}
+
+.mobile-whatsapp-cta {
+    display: inline-flex !important;
 }
 
    .openButton button {

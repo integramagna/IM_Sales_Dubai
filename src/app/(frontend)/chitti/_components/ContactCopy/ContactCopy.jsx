@@ -174,7 +174,7 @@ const Contact = () => {
                                         </mask>
                                         <g mask="url(#mask1_c)"><path d="M0 0H24V24H0V0Z" fill="#101820" /></g>
                                     </svg>
-                                    <p>Delivered in 3–6 weeks, not 6 months</p>
+                                    <p>Delivered in 7-14 days, not 6 months</p>
                                 </div>
                                 <div className={styles.item}>
                                     <svg className={styles.checkIcon} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -184,7 +184,7 @@ const Contact = () => {
                                         </mask>
                                         <g mask="url(#mask2_c)"><path d="M0 0H24V24H0V0Z" fill="#101820" /></g>
                                     </svg>
-                                    <p>One team for design, dev, and brand, no handoff chaos</p>
+                                    <p>One team for design, structure, and print files, no handoff chaos</p>
                                 </div>
                             </div>
                         </div>
@@ -212,7 +212,6 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-
                     <div className={styles.rightWrapper}>
 
 
@@ -302,7 +301,7 @@ const Contact = () => {
                             {submitError && <span className={styles.errorMsg}>{submitError}</span>}
                             <div className={styles.ctaRow}>
                                 <button type="submit" className={styles.cta} disabled={submitting}>
-                                    <span className={styles.ctaText}>{submitting ? 'Sending…' : 'Claim My Free Brand Audit'}</span>
+                                    <span className={styles.ctaText}>{submitting ? 'Sending…' : 'Request a Quote '}</span>
                                     <span className={styles.ctaArrow}>
                                         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2.20984 1.2511L13.7433 1.2511L13.7433 12.7845M12.9424 2.05203L1.24872 13.7457" stroke="black" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />

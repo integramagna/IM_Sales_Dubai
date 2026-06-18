@@ -38,6 +38,7 @@ export default buildConfig({
     collections: [
       { slug: 'branding-forms' },
       { slug: 'branding-partials' },
+      // {}
     ],
   }),
 ],

@@ -1,7 +1,7 @@
 /* Desktop (default) */
 .main {
     margin: 0px;
-    padding: 0px;
+    padding: 0px clamp(24px, 15vw, 350px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,7 +28,7 @@
     flex-direction: row;
     width: 100%;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
 }
 
 .Logos img {
@@ -40,9 +40,9 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: fit-content;
+    width: 100%;
     align-items: flex-start;
-    padding: 0 clamp(24px, 9vw, 115px) clamp(80px, 8vw, 120px);
+    padding: 0 0 clamp(80px, 8vw, 120px);
 }
 
 .Heading {
@@ -115,30 +115,26 @@
     flex-shrink: 0;
 }
 
-.DesktopGrid {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.mainContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 12px;
     width: 100%;
-    align-items: center;
 }
 
-.GridRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-}
-
-.GridRow img {
-    width: clamp(160px, 18vw, 260px);
+.mainContainer img {
+    width: 100%;
     height: auto;
+    border-radius: 12px;
+    object-fit: cover;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
     .main {
         align-items: unset;
+        padding:0px;
     }
 
     .top {
@@ -182,7 +178,12 @@
         display: none;
     }
 
-    .DesktopGrid {
+    .mainContainer {
         display: none;
+    }
+}
+@media (min-width: 641px) and (max-width: 1200px) {
+    .main {
+        padding: 0 clamp(24px, 7vw, 150px)  0px;
     }
 }

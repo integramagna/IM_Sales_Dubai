@@ -494,16 +494,16 @@
         flex-direction: column;
         justify-content: left;
         align-items: baseline;
-        gap: 0px;
+        gap: 1px;
     }
 
     .linkedin h4,
     .founderslinks h4 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .linkedin {
-        align-items: center;
+        align-items: baseline;
         gap: 5px;
         /* padding: 6px 10px; */
         /* border: 1px solid #101820; */
@@ -523,8 +523,8 @@
     }
 
     .linkedin svg {
-        width: 13px;
-        height: 13px;
+        width: 15px;
+        height: 15px;
     }
 
     .founderline {

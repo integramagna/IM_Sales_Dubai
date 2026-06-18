@@ -19,7 +19,7 @@ export default function White() {
                         <div className={styles.row}>
                             <div className={styles.num}>2</div>
                             <div className={styles.text}>
-                                Design & review We design. You see 3D mockups. We revise until you love it.
+                                We design. You see 3D mockups. We revise until you love it.
                             </div>
                         </div>
                         <div className={styles.row}>
@@ -46,7 +46,7 @@ export default function White() {
                     <div className={styles.topbottom}>
                         <div className={styles.Quote}>
                             <div className={styles.txt0}>
-                                Book a free call                            </div>
+                               Request a Quote                             </div>
                             <div className={styles.circle}>
                                 <svg className={styles.iconAlign} width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="2" y="2" width="24" height="24" rx="12" fill="black" />

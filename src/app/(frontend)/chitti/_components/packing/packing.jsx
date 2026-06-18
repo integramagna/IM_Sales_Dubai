@@ -21,7 +21,7 @@ export default function Packaging() {
                         <div className={styles.topbottom}>
                             <div className={styles.Quote}>
                                 <div className={styles.txt0}>
-                                    See How We Can Help
+                                    Request a Quote
                                 </div>
                                 <div className={styles.circle}>
                                     <svg className={styles.iconAlign} width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,35 +40,35 @@ export default function Packaging() {
                                     <circle cx="8" cy="8" r="8" fill="#FFD4DF" />
                                     <circle cx="8" cy="8" r="4" fill="#FA7598" />
                                 </svg>
-                                <h1> Packaging designed to sell </h1>
+                                <h1>Launch-ready in 7-14 days </h1>
                             </div>
                             <div className={styles.ul}>
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="8" cy="8" r="8" fill="#FFD4DF" />
                                     <circle cx="8" cy="8" r="4" fill="#FA7598" />
                                 </svg>
-                                <h1> Built for Indian shelves  </h1>
+                                <h1>Production-ready files, every time</h1>
                             </div>
                             <div className={styles.ul}>
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="8" cy="8" r="8" fill="#FFD4DF" />
                                     <circle cx="8" cy="8" r="4" fill="#FA7598" />
                                 </svg>
-                                <h1> Launch-ready in 7-14 days   </h1>
+                                <h1>Packaging designed to sell</h1>
                             </div>
                             <div className={styles.ul}>
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="8" cy="8" r="8" fill="#FFD4DF" />
                                     <circle cx="8" cy="8" r="4" fill="#FA7598" />
                                 </svg>
-                                <h1>Production-ready, every time</h1>
+                                <h1>Built for Indian shelves</h1>
                             </div>
                             <div className={styles.ul}>
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="8" cy="8" r="8" fill="#FFD4DF" />
                                     <circle cx="8" cy="8" r="4" fill="#FA7598" />
                                 </svg>
-                                <h1>One team. One process. </h1>
+                                <h1>One team, one process - no handoff chaos</h1>
                             </div>
                             <div className={styles.ul}>
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

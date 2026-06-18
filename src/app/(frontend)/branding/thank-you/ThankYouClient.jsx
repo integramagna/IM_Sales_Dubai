@@ -50,7 +50,6 @@ export default function ThankYouClient({ images }) {
             </Link>
           </div>
         </div>
-
         {images.length > 0 && (
           <>
             <div
