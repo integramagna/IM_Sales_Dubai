@@ -217,105 +217,105 @@ const Contact = () => {
 
                         <div className={styles.formHeadingMobile}>
                             <h2 className={styles.formTitle}>
-                                Tell us what you’re building <br/> <span className={styles.formSubtitle}> we’ll take it further.</span>
-                        </h2>
-                        <p>No pitch. No agency jargon. Just honest brand advice.</p>
-                    </div>
-
-                    <div className={styles.rightContainer}>
-
-                        <div className={styles.formHeadingDesktop}>
-                            <h2 className={styles.formTitle}>
-                                Tell us what you’re building<br />
-                                <span className={styles.formSubtitle}> we’ll take it further.</span>
+                                Tell us what you’re building <br /> <span className={styles.formSubtitle}> we’ll take it further.</span>
                             </h2>
                             <p>No pitch. No agency jargon. Just honest brand advice.</p>
                         </div>
-                        <form className={styles.form} onSubmit={handleSubmit} noValidate>
-                            <div className={styles.formRow}>
+
+                        <div className={styles.rightContainer}>
+
+                            <div className={styles.formHeadingDesktop}>
+                                <h2 className={styles.formTitle}>
+                                    Tell us what you’re building<br />
+                                    <span className={styles.formSubtitle}> we’ll take it further.</span>
+                                </h2>
+                                <p>No pitch. No agency jargon. Just honest brand advice.</p>
+                            </div>
+                            <form className={styles.form} onSubmit={handleSubmit} noValidate>
+                                <div className={styles.formRow}>
+                                    <div className={styles.fieldWrap}>
+                                        <input
+                                            className={`${styles.input} ${errors.fullName ? styles.inputError : ''}`}
+                                            type="text"
+                                            name="fullName"
+                                            placeholder="Full Name*"
+                                            value={formData.fullName}
+                                            onChange={handleChange}
+                                            onBlur={handleBlur}
+                                        />
+                                        {errors.fullName && <span className={styles.errorMsg}>{errors.fullName}</span>}
+                                    </div>
+                                    <div className={styles.fieldWrap}>
+                                        <input
+                                            className={`${styles.input} ${errors.company ? styles.inputError : ''}`}
+                                            type="text"
+                                            name="company"
+                                            placeholder="Company/ Organization"
+                                            value={formData.company}
+                                            onChange={handleChange}
+                                            onBlur={handleBlur}
+                                        />
+                                        {errors.company && <span className={styles.errorMsg}>{errors.company}</span>}
+                                    </div>
+                                </div>
+                                <div className={styles.formRow}>
+                                    <div className={styles.fieldWrap}>
+                                        <input
+                                            className={`${styles.input} ${errors.email ? styles.inputError : ''}`}
+                                            type="email"
+                                            name="email"
+                                            placeholder="Work Email*"
+                                            value={formData.email}
+                                            onChange={handleChange}
+                                            onBlur={handleBlur}
+                                        />
+                                        {errors.email && <span className={styles.errorMsg}>{errors.email}</span>}
+                                    </div>
+                                    <div className={styles.fieldWrap}>
+                                        <input
+                                            className={`${styles.input} ${errors.phone ? styles.inputError : ''}`}
+                                            type="tel"
+                                            name="phone"
+                                            placeholder="Contact no."
+                                            value={formData.phone}
+                                            onChange={handleChange}
+                                            onBlur={handleBlur}
+                                        />
+                                        {errors.phone && <span className={styles.errorMsg}>{errors.phone}</span>}
+                                    </div>
+                                </div>
                                 <div className={styles.fieldWrap}>
-                                    <input
-                                        className={`${styles.input} ${errors.fullName ? styles.inputError : ''}`}
-                                        type="text"
-                                        name="fullName"
-                                        placeholder="Full Name*"
-                                        value={formData.fullName}
+                                    <textarea
+                                        className={`${styles.textarea} ${errors.message ? styles.inputError : ''}`}
+                                        name="message"
+                                        placeholder="Tell us about the project"
+                                        value={formData.message}
                                         onChange={handleChange}
                                         onBlur={handleBlur}
                                     />
-                                    {errors.fullName && <span className={styles.errorMsg}>{errors.fullName}</span>}
+                                    <div className={styles.charCount}>
+                                        {formData.message.length}/500
+                                    </div>
+                                    {errors.message && <span className={styles.errorMsg}>{errors.message}</span>}
                                 </div>
-                                <div className={styles.fieldWrap}>
-                                    <input
-                                        className={`${styles.input} ${errors.company ? styles.inputError : ''}`}
-                                        type="text"
-                                        name="company"
-                                        placeholder="Company/ Organization"
-                                        value={formData.company}
-                                        onChange={handleChange}
-                                        onBlur={handleBlur}
-                                    />
-                                    {errors.company && <span className={styles.errorMsg}>{errors.company}</span>}
+                                {submitError && <span className={styles.errorMsg}>{submitError}</span>}
+                                <div className={styles.ctaRow}>
+                                    <button type="submit" className={styles.cta} disabled={submitting}>
+                                        <span className={styles.ctaText}>{submitting ? 'Sending…' : 'Request a Quote '}</span>
+                                        <span className={styles.ctaArrow}>
+                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.20984 1.2511L13.7433 1.2511L13.7433 12.7845M12.9424 2.05203L1.24872 13.7457" stroke="black" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </button>
                                 </div>
-                            </div>
-                            <div className={styles.formRow}>
-                                <div className={styles.fieldWrap}>
-                                    <input
-                                        className={`${styles.input} ${errors.email ? styles.inputError : ''}`}
-                                        type="email"
-                                        name="email"
-                                        placeholder="Work Email*"
-                                        value={formData.email}
-                                        onChange={handleChange}
-                                        onBlur={handleBlur}
-                                    />
-                                    {errors.email && <span className={styles.errorMsg}>{errors.email}</span>}
-                                </div>
-                                <div className={styles.fieldWrap}>
-                                    <input
-                                        className={`${styles.input} ${errors.phone ? styles.inputError : ''}`}
-                                        type="tel"
-                                        name="phone"
-                                        placeholder="Contact no."
-                                        value={formData.phone}
-                                        onChange={handleChange}
-                                        onBlur={handleBlur}
-                                    />
-                                    {errors.phone && <span className={styles.errorMsg}>{errors.phone}</span>}
-                                </div>
-                            </div>
-                            <div className={styles.fieldWrap}>
-                                <textarea
-                                    className={`${styles.textarea} ${errors.message ? styles.inputError : ''}`}
-                                    name="message"
-                                    placeholder="Tell us about the project"
-                                    value={formData.message}
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                />
-                                <div className={styles.charCount}>
-                                    {formData.message.length}/500
-                                </div>
-                                {errors.message && <span className={styles.errorMsg}>{errors.message}</span>}
-                            </div>
-                            {submitError && <span className={styles.errorMsg}>{submitError}</span>}
-                            <div className={styles.ctaRow}>
-                                <button type="submit" className={styles.cta} disabled={submitting}>
-                                    <span className={styles.ctaText}>{submitting ? 'Sending…' : 'Request a Quote '}</span>
-                                    <span className={styles.ctaArrow}>
-                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.20984 1.2511L13.7433 1.2511L13.7433 12.7845M12.9424 2.05203L1.24872 13.7457" stroke="black" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                    </span>
-                                </button>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
+
                     </div>
 
                 </div>
-
-            </div>
-        </div >
+            </div >
         </>
     )
 }

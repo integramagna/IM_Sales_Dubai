@@ -6,8 +6,8 @@
     background-color: #ffff;
     box-sizing: border-box;
     /* padding: clamp(80px, 12vw, 160px) clamp(24px, 12vw, 215px); */
-    padding:    80px clamp(80px, 15vw, 350px);
-    padding-bottom:0px;
+    padding: 80px clamp(80px, 15vw, 350px);
+    padding-bottom: 0px;
 }
 
 .MainContainer {
@@ -15,10 +15,10 @@
     justify-content: left;
     flex-direction: row;
     /* gap: clamp(40px, 15vw, 180px); */
-    gap:155px;
+    gap: 35px;
     width: 100%;
     max-width: 1400px;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .left {
@@ -32,6 +32,7 @@
     display: flex;
     flex-direction: column;
     gap: 45px;
+    padding-top: 60px;
 }
 
 .leftOneTop {
@@ -39,7 +40,7 @@
 }
 
 .leftOneTop h3 {
-    font-size: var(--fs-34);
+    font-size: 34px;
     font-weight: 400;
     color: #101820;
     margin: 0;
@@ -47,7 +48,7 @@
 }
 
 .actually {
-    font-size: var(--fs-34);
+    font-size: 34px;
     font-weight: 400;
     color: #fa7598;
     margin: 0;
@@ -64,11 +65,20 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
-    align-items: center;
+    align-items: baseline;
+}
+
+.checkIcon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    /* padding-top:5px; */
+    min-width: 24px;
+    min-height: 24px;
 }
 
 .item p {
-    font-size: 16px;
+    font-size: 26px;
     font-weight: 400;
     color: #101820;
     margin: 0;
@@ -115,10 +125,11 @@
 }
 
 .lefttwoToprighttop h2 {
-    font-size: var(--fs-26);
+    font-size: 34px;
     font-weight: 500;
     color: #101820;
     margin: 0;
+    letter-spacing: 4%;
     font-family: var(--font-awesome-serif);
 }
 
@@ -130,7 +141,7 @@
 }
 
 .founderslinks h4 {
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 400;
     color: #101820;
     margin: 0;
@@ -153,7 +164,7 @@
 }
 
 .linkedin h4 {
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 400;
     color: #101820;
     margin: 0;
@@ -230,7 +241,7 @@
 }
 
 .formTitle {
-    font-size: var(--fs-34);
+    font-size: 34px;
     font-weight: 500;
     color: #101820;
     margin: 0;
@@ -239,7 +250,7 @@
 }
 
 .formSubtitle {
-    font-size: var(--fs-34);
+    font-size: 34px;
     font-weight: 500;
     color: #101820;
     font-family: var(--font-awesome-serif);
@@ -275,7 +286,7 @@
     border: 0.5px solid #808080;
     background-color: #ffffff;
     padding: 0 17px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     color: #101820;
     font-family: var(--font-pretendard);
@@ -296,6 +307,10 @@
 
 .inputError {
     border-color: #e03e3e;
+}
+
+.rightWrapper p {
+    font-size: 22px;
 }
 
 .errorMsg {
@@ -438,7 +453,7 @@
     }
 
     .formTitle {
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .checkIcon {
@@ -448,7 +463,7 @@
     }
 
     .formSubtitle {
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .formRow {
@@ -580,7 +595,7 @@
 @media (min-width: 641px) and (max-width: 900px) {
     .main {
         padding-bottom: 0px;
-        padding-top:90px;
+        padding-top: 90px;
         padding: 90px clamp(24px, 7vw, 150px) 0;
     }
 
@@ -613,7 +628,7 @@
     }
 
     .formTitle {
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .formSubtitle {

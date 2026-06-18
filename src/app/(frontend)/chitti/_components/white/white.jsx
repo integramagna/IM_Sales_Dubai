@@ -34,19 +34,13 @@ export default function White() {
 
                 <div className={styles.top}>
                     <div className={styles.toptop}>
-                        <h1 className={styles.heading}>
-                            You've seen how it works. <br />
-                            <span className={styles.italicText}>
-                                let's make it work for you.
-                            </span>
-                        </h1>
-                        <p className={styles.para1}>
-                            One free call is all it takes. Tell us about your product and we'll tell you exactly what your packaging needs.                        </p>
+                        <h1 className={styles.heading}>You've seen how it works. <span className={styles.italicText}>let's make it work for you.</span></h1>
+                        <p className={styles.para1}>One free call is all it takes. Tell us about your product and we'll tell you exactly what your packaging needs.</p>
                     </div>
                     <div className={styles.topbottom}>
                         <div className={styles.Quote}>
                             <div className={styles.txt0}>
-                               Request a Quote                             </div>
+                                Request a Quote                             </div>
                             <div className={styles.circle}>
                                 <svg className={styles.iconAlign} width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="2" y="2" width="24" height="24" rx="12" fill="black" />

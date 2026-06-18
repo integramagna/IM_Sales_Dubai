@@ -60,7 +60,7 @@ export default function Grid() {
                         <div className={styles.topbottom}>
                             <div className={styles.Quote}>
                                 <div className={styles.txt0}>
-                                    Book a discovery call
+                                    Request a Quote
                                 </div>
                                 <div className={styles.circle}>
                                     <svg className={styles.iconAlign} width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">

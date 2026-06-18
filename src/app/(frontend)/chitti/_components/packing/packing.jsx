@@ -9,7 +9,7 @@ export default function Packaging() {
                     <div className={styles.top}>
                         <div className={styles.toptop}>
                             <h1 className={styles.heading}>
-                                Your packaging is working 24/7. competitors <br />
+                                Your packaging is working 24/7. competitors
                                 <span className={styles.italicText}>
                                     Is it working hard enough?
                                 </span>
@@ -33,52 +33,52 @@ export default function Packaging() {
                         </div>
                     </div>
                     <div className={styles.bottom}>
-                        <h1 className={styles.Choose} style={{fontFamily:"var(--font-awesome-serif)", fontSize:"28px"}}>Why choose us ? </h1>
+                        <h1 className={styles.Choose} style={{ fontFamily: "var(--font-awesome-serif)", fontSize: "28px" }}>Why choose us ? </h1>
                         <div className={styles.uls}>
                             <div className={styles.ul}>
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg className={styles.dot} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="8" cy="8" r="8" fill="#FFD4DF" />
                                     <circle cx="8" cy="8" r="4" fill="#FA7598" />
                                 </svg>
                                 <h1>Launch-ready in 7-14 days </h1>
                             </div>
                             <div className={styles.ul}>
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg className={styles.dot} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="8" cy="8" r="8" fill="#FFD4DF" />
                                     <circle cx="8" cy="8" r="4" fill="#FA7598" />
                                 </svg>
                                 <h1>Production-ready files, every time</h1>
                             </div>
                             <div className={styles.ul}>
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg className={styles.dot} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="8" cy="8" r="8" fill="#FFD4DF" />
                                     <circle cx="8" cy="8" r="4" fill="#FA7598" />
                                 </svg>
                                 <h1>Packaging designed to sell</h1>
                             </div>
                             <div className={styles.ul}>
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg className={styles.dot} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="8" cy="8" r="8" fill="#FFD4DF" />
                                     <circle cx="8" cy="8" r="4" fill="#FA7598" />
                                 </svg>
                                 <h1>Built for Indian shelves</h1>
                             </div>
                             <div className={styles.ul}>
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg className={styles.dot} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="8" cy="8" r="8" fill="#FFD4DF" />
                                     <circle cx="8" cy="8" r="4" fill="#FA7598" />
                                 </svg>
                                 <h1>One team, one process - no handoff chaos</h1>
                             </div>
                             <div className={styles.ul}>
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="8" cy="8" r="8" fill="#FFD4DF" />
-                                <circle cx="8" cy="8" r="4" fill="#FA7598" />
-                            </svg>
-                            <h1>Honest advice, better outcomes</h1>
+                                <svg className={styles.dot} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="8" r="8" fill="#FFD4DF" />
+                                    <circle cx="8" cy="8" r="4" fill="#FA7598" />
+                                </svg>
+                                <h1>Honest advice, better outcomes</h1>
+                            </div>
                         </div>
-                        </div>
-                        
+
                     </div>
 
                 </div>

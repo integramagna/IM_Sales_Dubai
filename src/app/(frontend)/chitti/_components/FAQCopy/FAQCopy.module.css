@@ -29,7 +29,7 @@
 .left h4 {
     font-family: var(--font-pretendard);
     font-weight: 400;
-    font-size: var(--fs-34);
+    font-size: 34px;
     color: #101820;
     margin: 0;
 
@@ -46,7 +46,7 @@
 .left p {
     font-family: var(--font-pretendard);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 26px;
     color: #4E4E4E;
     margin: 0;
     max-width: 397px;
@@ -82,7 +82,7 @@
 .faqQuestionText {
     font-family: var(--font-pretendard);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 26px;
     color: #101820;
     flex: 1;
     line-height: 1.4;
@@ -117,7 +117,7 @@
 .faqAnswer p {
     font-family: var(--font-pretendard);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 22px;
     color: #646464;
     margin: 0;
     padding: 21px 15px 0 15px;

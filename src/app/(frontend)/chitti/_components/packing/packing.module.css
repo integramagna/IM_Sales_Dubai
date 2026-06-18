@@ -73,7 +73,7 @@
     justify-content: space-between;
     border: 1px solid black;
     border-radius: 80px;
-    padding:    10px 10px 10px 18px;
+    padding: 10px 10px 10px 18px;
     flex-shrink: 0;
     white-space: nowrap;
 }
@@ -122,6 +122,14 @@
     gap: 12px;
 }
 
+.dot {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
+    flex-shrink: 0;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
     .main {
@@ -149,19 +157,19 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size:24px;
+        font-size: 24px;
     }
 
     .para1 {
         text-align: center;
         width: unset;
-        font-size:18px;
+        font-size: 18px;
     }
 
     .Quote {
         flex-shrink: unset;
         white-space: unset;
-        
+
     }
 
     .bottom {
@@ -174,7 +182,7 @@
     .bottom h1 {
         font-family: var(--font-pretendard);
         font-weight: 500;
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .choose h1 {
@@ -211,7 +219,14 @@
         position: relative;
         z-index: 1;
     }
+
+    .txt0 {
+        font-size: 18px;
+        font-weight: 400;
+        font-family: var(--font-pretendard);
+    }
 }
+
 @media (min-width: 641px) and (max-width: 1200px) {
     .mainContainer {
         padding: 0px clamp(24px, 7vw, 150px) 80px;
