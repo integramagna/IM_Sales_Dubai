@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import styles from "./black.module.css"
 import bottle from "./bottle.png"
-import surgeCup from "./surgeCup.png"
+// import surgeCup from "./surgeCup.png"
 import gridHead from "./gridHead.png"
 import plainProducts from "./plainProducts.png"
 

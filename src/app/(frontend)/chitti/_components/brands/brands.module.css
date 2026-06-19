@@ -8,10 +8,10 @@
 }
 
 .top {
-    padding: 70px 0px 70px;
+    padding: 70px 0px 100px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
     justify-content: center;
     align-items: center;
 }
@@ -28,12 +28,12 @@
     flex-direction: row;
     width: 100%;
     justify-content: center;
-    gap: clamp(20px, 2vw, 45px);
+    gap: clamp(20px, 4vw, 70px);
 }
 
 .Logos img {
     width: auto;
-    height: clamp(40px, 5vw, 75px);
+    height: clamp(40px, 5vw, 65px);
 }
 
 .mid {
@@ -85,8 +85,13 @@
 }
 
 @keyframes marqueeLeft {
-    from { transform: translateX(0); }
-    to   { transform: translateX(-50%); }
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 .MarqueeTrackAnti {
@@ -105,8 +110,13 @@
 }
 
 @keyframes marqueeRight {
-    from { transform: translateX(-50%); }
-    to   { transform: translateX(0); }
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
 .LogoMarquee {
@@ -156,7 +166,7 @@
 @media (max-width: 768px) {
     .main {
         align-items: unset;
-        padding:0px;
+        padding: 0px;
     }
 
     .top {
@@ -166,7 +176,7 @@
 
     .top h1 {
         font-size: 20px;
-        padding-left:25px;
+        padding-left: 25px;
     }
 
     .Logos {
@@ -180,7 +190,7 @@
     }
 
     .Logos img {
-        height: clamp(25px, 10vw, 45px);
+        height: clamp(25px, 10vw, 80px);
         width: auto;
         max-width: clamp(45px, 14vw, 80px);
         flex-shrink: 1;
@@ -218,8 +228,18 @@
         display: none;
     }
 }
-@media (min-width: 641px) and (max-width: 1200px) {
+
+@media (min-width: 769px) and (max-width: 1200px) {
     .main {
-        /* padding: 0 clamp(24px, 7vw, 150px)  0px; */
+        padding: 0 clamp(24px, 7vw, 150px) 0px;
+    }
+
+    .Logos {
+        gap: clamp(20px, 4vw, 65px);
+    }
+
+    .Logos img {
+        width: auto;
+        height: clamp(40px, 6vw, 75px);
     }
 }
