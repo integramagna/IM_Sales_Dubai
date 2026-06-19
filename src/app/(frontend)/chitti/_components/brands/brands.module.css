@@ -170,13 +170,25 @@
     }
 
     .Logos {
-        display: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 25px;
+        overflow: hidden;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .Logos img {
+        height: clamp(25px, 10vw, 45px);
+        width: auto;
+        max-width: clamp(45px, 14vw, 80px);
+        flex-shrink: 1;
+        object-fit: contain;
     }
 
     .LogoMarquee {
-        display: block;
-        overflow: hidden;
-        width: 100%;
+        display: none;
     }
 
     .mid {

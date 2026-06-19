@@ -34,10 +34,10 @@ export default function Brand() {
                         Trusted by 250+ brands
                     </h1>
                     <div className={styles.Logos}>
-                        <Image src={titan1} alt="tata" />
+                        {/* <Image src={titan1} alt="tata" />
                         <span className={styles.divider} />
                         <Image src={tata2} alt="alhuzifa" />
-                        <span className={styles.divider} />
+                        <span className={styles.divider} /> */}
                         <Image src={marriot} alt="titan" />
                         <span className={styles.divider} />
                         <Image src={prestige} alt="marriot" />

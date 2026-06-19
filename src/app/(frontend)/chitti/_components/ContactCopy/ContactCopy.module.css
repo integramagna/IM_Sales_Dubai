@@ -491,6 +491,7 @@
 
     .leftOne {
         gap: 30px;
+        padding-top:0px;
     }
 
     .lefttwoTopleft img {
@@ -656,6 +657,7 @@
 
     .leftOne {
         gap: 30px;
+        
     }
 
     .lefttwoTopleft img {
