@@ -1,7 +1,8 @@
 
 'use client'
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import styles from "./home.module.css"
+import ContactPopupCopy from "../ContactCopy/ContactPopupCopy"
 import Image from "next/image"
 import oil from "./oil.png"
 import icecream1 from "./icecream1.png"
@@ -13,6 +14,7 @@ import besanArrow from "./besanArrow.png"
 import icecreamArrow from "./icecreamArrow.png"
 import everything from "./everything.png"
 export default function HomePage() {
+    const [isOpen, setIsOpen] = useState(false)
     useEffect(() => {
         if (window.innerWidth > 768) return
 
@@ -43,7 +45,7 @@ export default function HomePage() {
                 <div className={styles.mainContainer}>
                     <div className={styles.top}>
                         <h3 className={styles.headingTop}>LEADING PRODUCT PACKAGING DESIGN COMPANY IN INDIA </h3>
-                        <h1 className={styles.headingMain}>Packaging design Agency that delivers sales</h1>
+                        <h1 className={styles.headingMain}>Packaging Design That Gets Picked Off the Shelf.</h1>
                         <h1 className={styles.headingMainItalic}>Guaranteed.</h1>
                     </div>
                 </div>
@@ -111,7 +113,7 @@ export default function HomePage() {
                     <p className={styles.para}>
                         We design packaging that makes customers pick your product, on shelves, on Blinkit, on Amazon, and everywhere in between.
                     </p>
-                    <div className={styles.Quote}>
+                    <div className={styles.Quote} onClick={() => setIsOpen(true)} style={{ cursor: 'pointer' }}>
                         <div className={styles.txt0}>
                             Request a Quote
                         </div>
@@ -133,6 +135,7 @@ export default function HomePage() {
                 </div>
 
             </div>
+            <ContactPopupCopy isOpen={isOpen} onClose={() => setIsOpen(false)} />
         </>
     )
 }

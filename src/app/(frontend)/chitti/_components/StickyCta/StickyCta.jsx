@@ -1,9 +1,11 @@
 'use client'
 import { useEffect, useState } from 'react'
 import styles from './StickyCta.module.css'
+import ContactPopupCopy from '../ContactCopy/ContactPopupCopy'
 
 export default function StickyCta() {
     const [visible, setVisible] = useState(true)
+    const [isOpen, setIsOpen] = useState(false)
 
     useEffect(() => {
         const footer = document.getElementById('footer-sentinel')
@@ -17,9 +19,10 @@ export default function StickyCta() {
     }, [])
 
     return (
+        <>
         <div className={`${styles.stickyOuter}${!visible ? ` ${styles.hidden}` : ''}`}>
             <div className={styles.glassBorder}>
-                <div className={styles.ctaWrapper}>
+                <div className={styles.ctaWrapper} onClick={() => setIsOpen(true)} style={{ cursor: 'pointer' }}>
                     <span className={styles.ctaText}>Request a Quote</span>
                     <div className={styles.ctaCircle}>
                         <svg
@@ -41,5 +44,7 @@ export default function StickyCta() {
                 </div>
             </div>
         </div>
+        <ContactPopupCopy isOpen={isOpen} onClose={() => setIsOpen(false)} />
+        </>
     )
-}   
+}

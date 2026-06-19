@@ -1,7 +1,11 @@
+'use client'
+import { useState } from "react"
 import Image from "next/image"
 import styles from "./packing.module.css"
+import ContactPopupCopy from "../ContactCopy/ContactPopupCopy"
 
 export default function Packaging() {
+    const [isOpen, setIsOpen] = useState(false)
     return (
         <>
             <div className={styles.main}>
@@ -19,7 +23,7 @@ export default function Packaging() {
                             </p>
                         </div>
                         <div className={styles.topbottom}>
-                            <div className={styles.Quote}>
+                            <div className={styles.Quote} onClick={() => setIsOpen(true)} style={{ cursor: 'pointer' }}>
                                 <div className={styles.txt0}>
                                     Request a Quote
                                 </div>
@@ -84,6 +88,7 @@ export default function Packaging() {
                 </div>
             </div>
 
+            <ContactPopupCopy isOpen={isOpen} onClose={() => setIsOpen(false)} />
         </>
     )
 }

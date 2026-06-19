@@ -40,6 +40,7 @@
     gap: 20px;
     width: 100%;
 }
+
 .row {
     display: flex;
     flex-direction: row;
@@ -174,24 +175,31 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size:24px;
+        font-size: 24px;
     }
 
     .para1 {
         text-align: center;
         width: unset;
-        font-size:18px;
+        font-size: 18px;
     }
 
     .Quote {
         flex-shrink: unset;
         white-space: unset;
     }
+
     .heading02 {
-    /* font-family: var(--font-awesome-serif); */
-    font-weight: 500;
-    font-size: 20px;
-}
+        /* font-family: var(--font-awesome-serif); */
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .txt0 {
+        font-size: 18px;
+        font-weight: 400;
+        font-family: var(--font-pretendard);
+    }
 }
 
 @media (min-width: 641px) and (max-width: 1200px) {

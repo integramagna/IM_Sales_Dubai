@@ -1,14 +1,19 @@
+'use client'
+import { useState } from "react"
 import Image from "next/image";
 import styles from "./Grids.module.css"
-import marq1 from "./marq1.png"
-import marq2 from "./marq2.png"
-import marq3 from "./marq3.png"
-import marq4 from "./marq4.png"
-import marq5 from "./marq5.png"
-import marq6 from "./marq6.png"
-import marq7 from "./marq7.png"
+import ContactPopupCopy from "../ContactCopy/ContactPopupCopy"
+import marq1 from "./grid1.png"
+import marq2 from "./grid.png"
+import marq3 from "./grid3.png"
+import marq4 from "./grid4.png"
+import marq5 from "./grid5.png"
+import marq6 from "./grid6.png"
+import marq7 from "./grid7.png"
+import marq8 from "./grid8.png"
 
 export default function Grid() {
+    const [isOpen, setIsOpen] = useState(false)
     return (
         <>
             <div className={styles.main}>
@@ -43,7 +48,7 @@ export default function Grid() {
                             alt="marq1"
                         />
                         <Image
-                            src={marq4}
+                            src={marq8}
                             alt="marq1"
                         />
                     </div>
@@ -58,7 +63,7 @@ export default function Grid() {
                             </p>
                         </div>
                         <div className={styles.topbottom}>
-                            <div className={styles.Quote}>
+                            <div className={styles.Quote} onClick={() => setIsOpen(true)} style={{ cursor: 'pointer' }}>
                                 <div className={styles.txt0}>
                                     Request a Quote
                                 </div>
@@ -77,6 +82,7 @@ export default function Grid() {
 
 
             </div>
+            <ContactPopupCopy isOpen={isOpen} onClose={() => setIsOpen(false)} />
         </>
     )
 }

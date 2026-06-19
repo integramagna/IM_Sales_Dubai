@@ -6,6 +6,14 @@ import bottle from "./bottle.png"
 import surgeCup from "./surgeCup.png"
 import gridHead from "./gridHead.png"
 import plainProducts from "./plainProducts.png"
+
+
+import coffee from "./coffeeTop.png"
+import shampoo from "./shampoo.png"
+import grassTop from "./moreGrass.png"
+import iceCream from "./creamTOp.png"
+import spiceTop from "./spiceTop.png"
+import oilTop from "./oilTop.png"
 export default function Black() {
     const buttons = ["Pouches", "Bottles", "Boxes", "Tin", "3d Mockups", "Sachets"]
     const [activeIndex, setActiveIndex] = useState(0)
@@ -20,34 +28,34 @@ export default function Black() {
                             <h2 className={styles.headingNorm}>We design for every shelf, every category.</h2>
                         </div>
                         <div className={styles.grid}>
-                            <div className={styles.gridHead1}>
+                            {/* <div className={styles.gridHead1}>
                                 <h1 className={styles.gridText}>Food & Beverages</h1>
                                 <Image src={gridHead} alt="gridhead" />
-                            </div>
+                            </div> */}
                             <div className={`${styles.cell} ${styles.green}`}>
-                                <h1 className={styles.gridText}>Snacks & Namkeen</h1>
-                                <Image src={bottle} alt="gridhead" />
+                                <h1 className={styles.gridText}>Food & Beverage</h1>
+                                <Image src={coffee} alt="gridhead" />
                             </div>
                             <div className={`${styles.cell} ${styles.blue}`}>
                                 <h1 className={styles.gridText}>Beauty & Skincare</h1>
-                                <Image src={surgeCup} alt="gridhead" />
+                                <Image src={shampoo} alt="gridhead" />
                             </div>
                             <div className={`${styles.cell} ${styles.grey}`}>
                                 <h1 className={styles.gridText}>Baby & Wellness</h1>
-                                <Image src={surgeCup} alt="gridhead" />
+                                <Image src={grassTop} alt="gridhead" />
                             </div>
                             <div className={`${styles.cell} ${styles.yellow}`}>
                                 <h1 className={styles.gridText}>Supplements Dairy
                                     & Frozen</h1>
-                                <Image src={surgeCup} alt="gridhead" />
+                                <Image src={iceCream} alt="gridhead" />
                             </div>
                             <div className={`${styles.cell} ${styles.green}`}>
                                 <h1 className={styles.gridText}>Spices & Staples</h1>
-                                <Image src={surgeCup} alt="gridhead" />
+                                <Image src={spiceTop} alt="gridhead" />
                             </div>
                             <div className={`${styles.cell} ${styles.purple}`}>
                                 <h1 className={styles.gridText}>D2C & Gifting</h1>
-                                <Image src={surgeCup} alt="gridhead" />
+                                <Image src={oilTop} alt="gridhead" />
                             </div>
                         </div>
                         <div className={styles.Bottom}>

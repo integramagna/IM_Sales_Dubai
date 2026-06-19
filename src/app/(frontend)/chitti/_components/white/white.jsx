@@ -1,6 +1,10 @@
+'use client'
+import { useState } from "react"
 import styles from "./white.module.css"
+import ContactPopupCopy from "../ContactCopy/ContactPopupCopy"
 
 export default function White() {
+    const [isOpen, setIsOpen] = useState(false)
     return (
         <>
             <div className={styles.main}>
@@ -38,7 +42,7 @@ export default function White() {
                         <p className={styles.para1}>One free call is all it takes. Tell us about your product and we'll tell you exactly what your packaging needs.</p>
                     </div>
                     <div className={styles.topbottom}>
-                        <div className={styles.Quote}>
+                        <div className={styles.Quote} onClick={() => setIsOpen(true)} style={{ cursor: 'pointer' }}>
                             <div className={styles.txt0}>
                                 Request a Quote                             </div>
                             <div className={styles.circle}>
@@ -51,6 +55,7 @@ export default function White() {
                     </div>
                 </div>
             </div>
+            <ContactPopupCopy isOpen={isOpen} onClose={() => setIsOpen(false)} />
         </>
     )
 }

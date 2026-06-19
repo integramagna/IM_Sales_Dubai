@@ -72,9 +72,10 @@
     width: 24px;
     height: 24px;
     flex-shrink: 0;
-    /* padding-top:5px; */
     min-width: 24px;
     min-height: 24px;
+    position: relative;
+    top: 4px;
 }
 
 .item p {
@@ -555,7 +556,7 @@
     }
 
     .ctaText {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .ctaArrow {

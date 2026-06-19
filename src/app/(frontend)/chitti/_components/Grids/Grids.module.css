@@ -166,7 +166,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size: 26px;
+        font-size: 24px;
         margin: 0 auto;
         width: 80%;
     }
@@ -174,7 +174,7 @@
     .para1 {
         text-align: center;
         width: unset;
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .topbottom {
@@ -191,5 +191,8 @@
     .circle svg {
         width: 29px;
         height: 29px;
+    }
+    .txt0{
+        font-size:18px;
     }
 }
