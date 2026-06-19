@@ -241,7 +241,7 @@ useEffect(() => {
         </a>
       </div>
 
-      <div className="nav-holder" data-header="noscroll" data-view="0">
+      <div className={`nav-holder ${isScrollingDown ? 'hide-scroll-header' : 'show-scroll-header'}`} data-header="noscroll" data-view="0">
         <ul className="navlinks">
           {[
             { href: '#home', label: 'Home' },

@@ -63,10 +63,10 @@ const Contact = () => {
         return newErrors
     }
     const getOrCreateSessionId = () => {
-        let id = localStorage.getItem('partial_session')
+        let id = localStorage.getItem('pkg_partial_session')
         if (!id) {
             id = crypto.randomUUID()
-            localStorage.setItem('partial_session', id)
+            localStorage.setItem('pkg_partial_session', id)
         }
         return id
     }
@@ -79,7 +79,7 @@ const Contact = () => {
 
 
         if (value.trim()) {
-            fetch('/api/branding-partial', {
+            fetch('/api/packaging-partial', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -123,7 +123,7 @@ const Contact = () => {
         setSubmitting(true)
         setSubmitError('')
         try {
-            const res = await fetch('/api/branding-forms', {
+            const res = await fetch('/api/packaging-forms', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -135,7 +135,7 @@ const Contact = () => {
                 }),
             })
             if (!res.ok) throw new Error('Submission failed')
-            localStorage.removeItem('partial_session')
+            localStorage.removeItem('pkg_partial_session')
             router.push('/branding/thank-you')
         } catch {
             setSubmitError('Something went wrong. Please try again.')

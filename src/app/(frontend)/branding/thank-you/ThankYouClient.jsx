@@ -57,21 +57,21 @@ export default function ThankYouClient({ images }) {
               ref={imageAreaRef}
               onMouseEnter={() => setCursorVisible(true)}
               onMouseLeave={() => setCursorVisible(false)}
-               onClick={() =>
-    window.open('https://integramagna.com', '_blank')
-  }
+              onClick={() =>
+                window.open('https://integramagna.com', '_blank')
+              }
             >
               <div className={styles.column}>
                 <div className={`${styles.track} ${styles.trackDown}`}>
                   {doubled.map((img, i) => (
-                 <div key={i} className={styles.imageLink}>
-  <img
-    src={img.src}
-    alt="Integra Magna project"
-    className={styles.projectImage}
-    loading="lazy"
-  />
-</div>
+                    <div key={i} className={styles.imageLink}>
+                      <img
+                        src={img.src}
+                        alt="Integra Magna project"
+                        className={styles.projectImage}
+                        loading="lazy"
+                      />
+                    </div>
                   ))}
                 </div>
               </div>
@@ -98,12 +98,12 @@ export default function ThankYouClient({ images }) {
               </div>
             </div>
 
-           <div
-  className={styles.mobileImageArea}
-  onClick={() =>
-    window.open('https://integramagna.com', '_blank')
-  }
->
+            <div
+              className={styles.mobileImageArea}
+              onClick={() =>
+                window.open('https://integramagna.com', '_blank')
+              }
+            >
               <div className={styles.mobileRow}>
                 <div className={`${styles.mobileTrack} ${styles.mobileTrackLeft}`}>
                   {doubled.map((img, i) => (

@@ -10,6 +10,8 @@ import { Users } from './collections/Users'
 import { Media } from './collections/Media'
 import { BrandingForm } from './collections/BrandingForm'
 import { BrandingPartial } from './collections/BrandingPartial'
+import { PackagingForm } from './collections/PackagingForm'
+import { PackagingPartial } from './collections/PackagingPartial'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -21,7 +23,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media, BrandingForm, BrandingPartial],
+  collections: [Users, Media, BrandingForm, BrandingPartial, PackagingForm, PackagingPartial],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
@@ -38,7 +40,8 @@ export default buildConfig({
     collections: [
       { slug: 'branding-forms' },
       { slug: 'branding-partials' },
-      // {}
+      { slug: 'packaging-forms' },
+      { slug: 'packaging-partials' },
     ],
   }),
 ],

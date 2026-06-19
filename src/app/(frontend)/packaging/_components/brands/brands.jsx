@@ -44,8 +44,8 @@ export default function Brand() {
                         <span className={styles.divider} />
                         <Image src={silverCoin} alt="marriot" />
                         <span className={styles.divider} />
-                        <Image src={swiggy} alt="marriot" />
-                        <span className={styles.divider} />
+                        {/* <Image src={swiggy} alt="marriot" />
+                        <span className={styles.divider} /> */}
                          <Image src={keshari} alt="marriot" />
                         {/* <span className={styles.divider} /> */}
                     </div>

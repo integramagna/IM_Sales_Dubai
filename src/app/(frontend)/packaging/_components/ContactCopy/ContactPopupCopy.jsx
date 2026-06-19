@@ -3,10 +3,10 @@ import React, { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 import styles from './ContactPopupCopy.module.css'
 const getOrCreateSessionId = () => {
-  let id = localStorage.getItem('partial_session')
+  let id = localStorage.getItem('pkg_partial_session')
   if (!id) {
     id = crypto.randomUUID()
-    localStorage.setItem('partial_session', id)
+    localStorage.setItem('pkg_partial_session', id)
   }
   return id
 }
@@ -90,7 +90,7 @@ const handleBlur = (e) => {
 
   // partial capture
   if (value.trim()) {
-    fetch('/api/branding-partial', {
+    fetch('/api/packaging-partial', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -136,7 +136,7 @@ const handleBlur = (e) => {
     setSubmitError('')
 
     try {
-      const res = await fetch('/api/branding-forms', {
+      const res = await fetch('/api/packaging-forms', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -148,7 +148,7 @@ const handleBlur = (e) => {
         }),
       })
    if (!res.ok) throw new Error('Submission failed')
-localStorage.removeItem('partial_session')
+localStorage.removeItem('pkg_partial_session')
 router.push('/branding/thank-you')
     } catch {
       setSubmitError('Something went wrong. Please try again.')
