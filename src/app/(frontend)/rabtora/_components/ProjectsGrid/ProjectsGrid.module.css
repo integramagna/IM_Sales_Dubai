@@ -225,6 +225,16 @@
     .hideOnMobile {
         display: none;
     }
+    .workHeadContent h2,
+    .workHeadContent .workTitle {
+        font-size: 26px;
+        font-weight: 700;
+        
+    }
+    .workDescription p {
+        font-size: 12px;
+        font-weight: 400;
+    }
 }
 
 .workHeadContent {
@@ -241,7 +251,7 @@
   font-family: var(--font-pretendard);
   font-weight: normal;
   color: #101820;
-  opacity: 0.6;
+  opacity: 1;
   margin: 0;
 }
 
@@ -275,6 +285,7 @@
 .popupContent p {
   color: #555;
   font-family: var(--font-pretendard);
+
 }
 
 .popupSingleImage {
@@ -410,6 +421,13 @@
     padding: 2rem 1.5rem;
     max-width: 100%;
   }
+  .popupContent p{
+    font-weight:400;
+    font-size:12px;
+  }
+  /* .workHeadContent{
+    font-weight:700;
+  } */
 }
 
 .cardContentright {
@@ -435,7 +453,9 @@
   .workHeadContent .workTitle,
   .workHeadContent h2,
   .popupContent h2 {
-    font-size: clamp(0.875rem, 3.5vw, 1rem);
+    font-size: 26px;
+    font-weight: 700;
+    color:black !important;
   }
   .workDescription {
     font-size: clamp(1.5rem, 7vw, 2.5rem);

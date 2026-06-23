@@ -3,10 +3,10 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import styles from './ProjectsGrid.module.css';
 import Image from 'next/image';
-import one from './whitemantis.png';
-import two from './whtiemantis2.png';
-import three from './whitemantis3.png';
-import four from './whitemantis4.png';
+import one from './first.webp';
+import two from './second1.webp';
+import three from './third1.webp';
+import four from './fourth1.webp';
 
 const ArrowIcon = () => (
  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,15 +39,15 @@ const NextArrow = () => (
 const projects = [
   {
     src: one,
-    title: 'White Mantis',
+    title: 'Surge',
     // tags: 'Branding | Food',
     tags: 'Checkout completion up from 31% to 50%',
+    description: 'UI/UX Design and Mobile Application Development crafted for White Mantis Dubai.',
     popupImages: [
-      { type: 'landscape', src: '/assets/images/projects/royal/1.webp' },
-      { type: 'double',    src: ['/assets/images/projects/royal/2.webp', '/assets/images/projects/royal/3.webp'] },
-      { type: 'square',   src: '/assets/images/projects/royal/4.webp' },
-      { type: 'double',   src: ['/assets/images/projects/royal/5.webp', '/assets/images/projects/royal/6.webp'] },
-      { type: 'square',   src: '/assets/images/projects/royal/7.webp' },
+      { type: 'landscape', src: '/assets/images/projects/royal/first.png' },
+      { type: 'double',    src: ['/assets/images/projects/royal/first22.webp', '/assets/images/projects/royal/first33.webp'] },
+      { type: 'double',    src: ['/assets/images/projects/royal/first44.webp', '/assets/images/projects/royal/first55.webp'] },
+      { type: 'landscape', src: '/assets/images/projects/royal/first66.webp' },
     ],
   },
   {
@@ -55,6 +55,7 @@ const projects = [
     title: 'Al-Huzaifa',
     // tags: 'Branding | Lifestyle',
     tags: 'Time-to-first-value cut from 12 min-5 min',
+    description: 'UI/UX Design and Mobile Application Development crafted for White Mantis Dubai.',
     popupImages: [
       { type: 'landscape', src: '/assets/images/projects/magic/1.webp' },
       { type: 'double',    src: ['/assets/images/projects/magic/2.webp', '/assets/images/projects/magic/3.webp'] },
@@ -67,6 +68,7 @@ const projects = [
     title: 'Plan B',
     // tags: 'Branding | Hospitality',
     tags: '3× more form submissions in week one',
+    description: 'UI/UX Design and Mobile Application Development crafted for White Mantis Dubai.',
     popupImages: [
       { type: 'landscape', src: '/assets/images/projects/neelam/1.webp' },
       { type: 'double',    src: ['/assets/images/projects/neelam/2.webp', '/assets/images/projects/neelam/3.webp'] },
@@ -80,6 +82,7 @@ const projects = [
     title: 'ADND',
     // tags: 'Branding | Education',
     tags: '3× more form submissions in week once',
+    description: 'UI/UX Design and Mobile Application Development crafted for White Mantis Dubai.',
     popupImages: [
       { type: 'landscape', src: '/assets/images/projects/pres/1.webp' },
       { type: 'double',    src: ['/assets/images/projects/pres/2.webp', '/assets/images/projects/pres/3.webp'] },
@@ -203,7 +206,7 @@ const ProjectsGrid = () => {
               <div className={styles.workHeadContent}>
                 <h2 className={styles.workTitle}>{selectedProject.title}</h2>
                 <div className={styles.workDescription}>
-                  <p>{selectedProject.tags}</p>
+                  <p>{selectedProject.description}</p>
                 </div>
               </div>
 

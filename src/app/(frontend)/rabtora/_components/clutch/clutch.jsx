@@ -213,7 +213,7 @@ const ClutchSection = () => {
                         <ClutchLogoWhite />
                         <p className={styles.reviewsCount}>18 reviews</p>
                       </div>
-                      <a
+                      {/* <a
                         href="https://clutch.co/profile/integra-magna"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -221,7 +221,7 @@ const ClutchSection = () => {
                       >
                         <span>Go to Clutch</span>
                         <span className={styles.ctaArrow}><ArrowIcon /></span>
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>
