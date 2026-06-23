@@ -39,7 +39,7 @@ padding-bottom: clamp(14px, 4vw, 54px);
   align-items: center;
   max-width: 360px;
   flex-direction: row;
-gap: clamp(21px, 5vw, 69px);
+gap: clamp(21px, 5vw, 29px);
 }
 .linkdin,
 .facebook,

@@ -11,7 +11,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/',
-        destination: 'https://integramagna.com',
+        destination: 'https://www.rabtora.ae/',
         permanent: true,
       },
     ]

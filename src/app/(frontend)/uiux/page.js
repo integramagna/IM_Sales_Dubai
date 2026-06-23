@@ -1,3 +1,43 @@
+export const metadata = {
+  title: 'UI/UX Design Agency in Dubai | Rabtora',
+  description: "UAE's trusted UI/UX design agency. We design interfaces that drive more clicks, signups, and conversions for websites, apps, and digital products. Get a free quote in 24 hours.",
+  keywords: [
+    'UI UX design agency Dubai',
+    'UX design UAE',
+    'UI design agency',
+    'user experience design Dubai',
+    'conversion rate optimization',
+    'app UI design Dubai',
+    'website UX design UAE',
+    'product design agency Dubai',
+    'UI UX designer UAE',
+  ],
+  openGraph: {
+    title: 'UI/UX Design Agency in Dubai | Rabtora',
+    description: "UAE's trusted UI/UX design agency. We design interfaces that drive more clicks, signups, and conversions — for websites, apps, and digital products.",
+    url: 'https://impact.rabtora.ae/uiux',
+    siteName: 'Integra Magna',
+    type: 'website',
+    images: [
+      {
+        url: 'https://www.rabtora.com/twitter-image.png',
+        width: 1200,
+        height: 627,
+        alt: 'Rabtora UI/UX Design Agency Dubai',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@Integra_Magna',
+    title: 'UI/UX Design Agency in Dubai | Rabtora',
+    images: ['https://www.rabtora.com/twitter-image.png'],
+  },
+  alternates: {
+    canonical: 'https://rabtora.com/uiux',
+  },
+}
+
 import HomePage from "./_components/main/home";
 import Brand from "./_components/brands/brands";
 import ProjectsGrid from "./_components/ProjectsGrid/ProjectsGrid";

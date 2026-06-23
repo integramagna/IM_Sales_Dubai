@@ -4,9 +4,9 @@ import ConditionalHeader from './Components/Header/ConditionalHeader'
 import Analytics from './Analytics'
 
 export const metadata = {
-  title: 'Integra Magna | Branding, Strategy, and UX UI Design Agency',
+  title: 'Rabtora | Branding, Strategy, and UX UI Design Agency',
   description:
-    'Integra Magna is a strategic design agency that creates the digital product and brand experiences that elevate companies to their next exciting chapter.',
+    'Rabtora is a strategic design agency that creates the digital product and brand experiences that elevate companies to their next exciting chapter.',
   keywords: [
     'Creative Design agency',
     'UX UI Design',
@@ -17,32 +17,32 @@ export const metadata = {
     'UI Design',
     'branding',
     'Marketing plans',
-    'Integra Magna',
+    'Rabtora',
     'design',
   ],
-  authors: [{ name: 'Integra Magna', url: 'https://integramagna.com' }],
-  creator: 'Integra Magna',
+  authors: [{ name: 'Rabtora', url: 'https://www.rabtora.ae/' }],
+  creator: 'Rabtora',
   openGraph: {
-    title: 'Integra Magna | Branding & UX/UI Design Agency',
+    title: 'Rabtora | Branding & UX/UI Design Agency',
     description:
-      'Integra Magna is a strategic design agency that creates the digital product and brand experiences that elevate companies to their next exciting chapter.',
+      'Rabtora is a strategic design agency that creates the digital product and brand experiences that elevate companies to their next exciting chapter.',
     url: 'https://integramagna.com',
-    siteName: 'Integra Magna',
+    siteName: 'Rabtora',
     type: 'website',
     images: [
       {
-        url: 'https://www.integramagna.com/twitter-image.png',
+        url: 'https://www.rabtora.com/twitter-image.png',
         width: 1200,
         height: 627,
-        alt: 'Integra Magna Social Preview',
+        alt: 'Rabtora Social Preview',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     site: '@Integra_Magna',
-    title: 'Integra Magna | Branding & UX/UI Design Agency',
-    images: ['https://www.integramagna.com/twitter-image.png'],
+    title: 'Rabtora | Branding & UX/UI Design Agency',
+    images: ['https://www.rabtora.com/twitter-image.png'],
   },
   icons: {
     icon: [{ url: '/favicon.ico', type: 'image/x-icon' }],
@@ -56,6 +56,7 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
+        <script dangerouslySetInnerHTML={{__html:`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-N9P3HHX4');`}} />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
@@ -131,6 +132,7 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
         />
       </head>
       <body>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9P3HHX4" height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe></noscript>
         <Analytics />
         <ConditionalHeader />
         <main>{children}</main>
