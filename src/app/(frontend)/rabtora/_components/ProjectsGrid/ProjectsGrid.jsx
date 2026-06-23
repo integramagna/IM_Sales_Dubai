@@ -57,10 +57,10 @@ const projects = [
     tags: 'Time-to-first-value cut from 12 min-5 min',
     description: 'UI/UX Design and Mobile Application Development crafted for White Mantis Dubai.',
     popupImages: [
-      { type: 'landscape', src: '/assets/images/projects/magic/1.webp' },
-      { type: 'double',    src: ['/assets/images/projects/magic/2.webp', '/assets/images/projects/magic/3.webp'] },
-      { type: 'square',   src: '/assets/images/projects/magic/4.webp' },
-      { type: 'double',   src: ['/assets/images/projects/magic/5.webp', '/assets/images/projects/magic/6.webp'] },
+      { type: 'landscape', src: '/assets/images/projects/magic/secondqq.webp' },
+      { type: 'double',    src: ['/assets/images/projects/magic/secondqqq.webp', '/assets/images/projects/magic/secondqqqq.webp'] },
+      { type: 'double',    src: ['/assets/images/projects/magic/secondq.webp', '/assets/images/projects/magic/secondqqqqq.webp'] },
+      { type: 'landscape', src: '/assets/images/projects/magic/secondfinalq.webp' },
     ],
   },
   {
