@@ -26,7 +26,7 @@ export const metadata = {
     title: 'Rabtora | Branding & UX/UI Design Agency',
     description:
       'Rabtora is a strategic design agency that creates the digital product and brand experiences that elevate companies to their next exciting chapter.',
-    url: 'https://integramagna.com',
+    url: 'https://rabtora.ae',
     siteName: 'Rabtora',
     type: 'website',
     images: [
@@ -40,7 +40,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@Integra_Magna',
+    site: '@Rabtora',
     title: 'Rabtora | Branding & UX/UI Design Agency',
     images: ['https://www.rabtora.com/twitter-image.png'],
   },

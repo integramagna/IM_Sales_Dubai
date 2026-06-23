@@ -16,7 +16,7 @@ export const metadata = {
     title: 'UI/UX Design Agency in Dubai | Rabtora',
     description: "UAE's trusted UI/UX design agency. We design interfaces that drive more clicks, signups, and conversions — for websites, apps, and digital products.",
     url: 'https://impact.rabtora.ae/uiux',
-    siteName: 'Integra Magna',
+    siteName: 'Rabtora',
     type: 'website',
     images: [
       {
@@ -29,7 +29,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@Integra_Magna',
+    site: '@Rabtora',
     title: 'UI/UX Design Agency in Dubai | Rabtora',
     images: ['https://www.rabtora.com/twitter-image.png'],
   },
