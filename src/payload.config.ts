@@ -46,7 +46,7 @@ export default buildConfig({
       { slug: 'packaging-partials' },
       { slug: 'ui-forms'},
       { slug: 'ui-partials'},
-      // asdf
+      // asdfasdf
     ],
   }),
 ],
