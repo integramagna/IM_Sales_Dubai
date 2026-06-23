@@ -9,8 +9,9 @@
     z-index: 1;
     padding: 80px clamp(80px, 15vw, 350px);
     padding-bottom:0px;
-    padding-top:0px;    
-        
+    padding-top:0px;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .MainConatiner {

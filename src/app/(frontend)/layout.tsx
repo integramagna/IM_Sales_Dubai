@@ -1,6 +1,6 @@
 import React from 'react'
 import './globals.css'
-import Header from './Components/Header/Header'
+import ConditionalHeader from './Components/Header/ConditionalHeader'
 import Analytics from './Analytics'
 
 export const metadata = {
@@ -132,7 +132,7 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
       </head>
       <body>
         <Analytics />
-        <Header />
+        <ConditionalHeader />
         <main>{children}</main>
       </body>
     </html>

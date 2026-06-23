@@ -1,0 +1,239 @@
+/* Desktop (default) */
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 50px;
+    padding: 70px clamp(24px, 15vw, 350px) 80px;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.mainContainer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    display: block;
+}
+
+.mainContainer> :nth-child(1) {
+    grid-column: span 2;
+}
+
+.mainContainer> :nth-child(2) {
+    grid-column: span 1;
+}
+
+.mainContainer> :nth-child(3) {
+    grid-column: span 1;
+}
+
+.mainContainer> :nth-child(4) {
+    grid-column: span 1;
+}
+
+.mainContainer> :nth-child(5) {
+    grid-column: span 1;
+}
+
+.mainContainer> :nth-child(6) {
+    grid-column: span 2;
+}
+
+.mobileOnly {
+    display: none;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 25px;
+    /* width:1109px; */
+    padding: 40px 30px;
+    background: radial-gradient(circle at 36% -492%, #000 37%, #060102 71%, #9f7200 100%);
+    color: #fff;
+    /* width: 320px; */
+    flex-shrink: 0;
+}
+
+.toptop {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.topbottom {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    font-family: var(--font-pretendard), sans-serif;
+    font-size: 34px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.italicText {
+    font-family: var(--font-awesome-serif);
+}
+
+.para1 {
+    text-align: left;
+    font-size: 24px;
+    font-family: var(--font-pretendard);
+    width: 60%;
+}
+
+.Quote {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    align-items: center;
+    gap: 7px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 80px;
+    padding: 10px 10px 10px 16px;
+    flex-shrink: 0;
+    white-space: nowrap;
+
+}
+
+.para {
+    font-family: var(--font-pretendard);
+    font-weight: 400;
+    font-size: 20px;
+    width: 90%;
+}
+
+.iconAlign {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.txt0 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--font-pretendard);
+}
+
+@media (min-width:769px) and (max-width: 1200px) {
+    .top {
+        width: auto;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        gap: 50px;
+        padding: 0px clamp(24px, 7vw, 150px) 80px;
+    }
+
+    .para1 {
+        width: 100%;
+    }
+
+    .heading {
+        width: 90%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        gap: 70px;
+        padding: 70px 24px 70px;
+    }
+
+    .mainContainer {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .mobileOnly {
+        display: block;
+        grid-column: span 1;
+    }
+
+    .top {
+        width: auto;
+        flex-shrink: unset;
+        flex-direction: column;
+        align-items: center;
+        background: radial-gradient(circle at 42% -24%, #000 65%, #060102 50%, #ffb600 110%);
+    }
+
+    .toptop {
+        align-items: unset;
+    }
+
+    .heading {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 24px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .para1 {
+        text-align: center;
+        width: unset;
+        font-size: 18px;
+    }
+
+    .topbottom {
+        justify-content: center;
+    }
+
+    .Quote {
+        flex-shrink: unset;
+        white-space: unset;
+        padding: 10px 10px 10px 16px;
+
+    }
+
+    .circle svg {
+        width: 29px;
+        height: 29px;
+    }
+
+    .txt0 {
+        font-size: 18px;
+    }
+}
