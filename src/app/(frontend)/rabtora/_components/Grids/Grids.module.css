@@ -29,7 +29,7 @@
 }
 
 .mainContainer> :nth-child(1) {
-    grid-column: span 2;
+    grid-column: span 1;
 }
 
 .mainContainer> :nth-child(2) {
@@ -45,15 +45,7 @@
 }
 
 .mainContainer> :nth-child(5) {
-    grid-column: span 1;
-}
-
-.mainContainer> :nth-child(6) {
-    grid-column: span 2;
-}
-
-.mobileOnly {
-    display: none;
+    grid-column: span 4;
 }
 
 .top {
@@ -185,9 +177,8 @@
         width: 100%;
     }
 
-    .mobileOnly {
-        display: block;
-        grid-column: span 1;
+    .mainContainer> :nth-child(5) {
+        grid-column: span 2;
     }
 
     .top {

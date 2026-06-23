@@ -70,11 +70,10 @@ const projects = [
     tags: '3× more form submissions in week one',
     description: 'UI/UX Design and Mobile Application Development crafted for White Mantis Dubai.',
     popupImages: [
-      { type: 'landscape', src: '/assets/images/projects/neelam/1.webp' },
-      { type: 'double',    src: ['/assets/images/projects/neelam/2.webp', '/assets/images/projects/neelam/3.webp'] },
-      { type: 'square',   src: '/assets/images/projects/neelam/4.webp' },
-      { type: 'double',   src: ['/assets/images/projects/neelam/5.webp', '/assets/images/projects/neelam/6.webp'] },
-      { type: 'square',   src: '/assets/images/projects/neelam/7.webp' },
+      { type: 'landscape', src: '/assets/images/projects/neelam/thirdIMG1.webp' },
+      { type: 'double',    src: ['/assets/images/projects/neelam/thirdIMG2.webp', '/assets/images/projects/neelam/thirdIMG3.webp'] },
+      { type: 'double',    src: ['/assets/images/projects/neelam/thirdIMG4.webp', '/assets/images/projects/neelam/thirdIMG5.webp'] },
+      { type: 'landscape', src: '/assets/images/projects/neelam/thirdIMGfinal.webp' },
     ],
   },
   {
@@ -84,11 +83,10 @@ const projects = [
     tags: '3× more form submissions in week once',
     description: 'UI/UX Design and Mobile Application Development crafted for White Mantis Dubai.',
     popupImages: [
-      { type: 'landscape', src: '/assets/images/projects/pres/1.webp' },
-      { type: 'double',    src: ['/assets/images/projects/pres/2.webp', '/assets/images/projects/pres/3.webp'] },
-      { type: 'square',   src: '/assets/images/projects/pres/4.webp' },
-      { type: 'double',   src: ['/assets/images/projects/pres/5.webp', '/assets/images/projects/pres/6.webp'] },
-      { type: 'square',   src: '/assets/images/projects/pres/7.webp' },
+      { type: 'landscape', src: '/assets/images/projects/pres/fourthONE.webp' },
+      { type: 'double',    src: ['/assets/images/projects/pres/fourthTWO.webp', '/assets/images/projects/pres/fourthTHREE.webp'] },
+      { type: 'double',    src: ['/assets/images/projects/pres/fourthFOUR.webp', '/assets/images/projects/pres/fourthFIFTH.webp'] },
+      { type: 'landscape', src: '/assets/images/projects/pres/fourthFINAL.webp' },
     ],
   },
 ];

@@ -3,11 +3,11 @@ import { useState } from "react"
 import Image from "next/image";
 import styles from "./Grids.module.css"
 import ContactPopupCopy from "../ContactCopy/ContactPopupCopy"
-import marq1 from "./grid'1.png"
-import marq2 from "./grid'2.png"
-import marq3 from "./gird'3.png"
-import marq4 from "./grid'4.png"
-import marq5 from "./grid'5.png"
+import marq1 from "./Frame 1984079042.png"
+import marq2 from "./Frame 1984079045 (1).png"
+import marq3 from "./Frame 1984079046.png"
+import marq4 from "./Frame 1984079720.png"
+import marq5 from "./Rectangle 161125234 (5).png"
 
 export default function Grid() {
     const [isOpen, setIsOpen] = useState(false)
@@ -21,11 +21,6 @@ export default function Grid() {
                         <Image src={marq3} alt="grid3" />
                         <Image src={marq4} alt="grid4" />
                         <Image src={marq5} alt="grid5" />
-                        <Image src={marq1} alt="grid1" />
-                        <Image src={marq2} alt="grid2" className={styles.mobileOnly} />
-                        <Image src={marq3} alt="grid3" className={styles.mobileOnly} />
-                        <Image src={marq4} alt="grid4" className={styles.mobileOnly} />
-                        <Image src={marq5} alt="grid5" className={styles.mobileOnly} />
                     </div>
                     <div className={styles.top}>
                         <div className={styles.toptop}>

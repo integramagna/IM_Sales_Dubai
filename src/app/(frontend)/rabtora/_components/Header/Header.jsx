@@ -108,7 +108,7 @@ function Header() {
       >
         <div className="logo-contact-container">
           <div data-links="Integra Magna">
-            <a href="#home" className="logo">
+            <a href="https://www.rabtora.ae/" target="_blank" rel="noopener noreferrer" className="logo">
               <img
                 src={newlogo.src}
                 className="imglogo desktop-logo"
@@ -188,7 +188,7 @@ function Header() {
         data-view="0"
       >
         <div data-links="Integra Magna">
-          <a href="#home">
+          <a href="https://www.rabtora.ae/" target="_blank" rel="noopener noreferrer">
             <img
               src={newlogo.src}
               className="imglogo"
