@@ -123,7 +123,7 @@ function Header() {
           </div>
 
           <a
-            href="https://wa.me/918085808651"
+            href="https://wa.me/971585792934"
             target="_blank"
             rel="noopener noreferrer"
             className="whatsapp-cta mobile-whatsapp-cta"
@@ -202,7 +202,7 @@ function Header() {
         className={`sales-cta-wrapper ${isScrollingDown ? 'hide-scroll-header' : 'show-scroll-header'}`}
       >
         <a
-          href="https://wa.me/918085808651"
+          href="https://wa.me/971585792934"
           target="_blank"
           rel="noopener noreferrer"
           className="whatsapp-cta"

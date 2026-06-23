@@ -40,7 +40,8 @@
 }
 
 .imglogo {
-  width: 80px;
+  width: 95px;
+  mix-blend-mode: normal;
 }
 
 .nav-holder {
@@ -51,10 +52,6 @@
 
 .hidden {
   display: none
-}
-
-.header-logo {
-    width: 80px;
 }
 
 .scroll-header {
@@ -107,7 +104,8 @@
 }
 
 .imglogo {
-    width: 80px;
+    width: 95px;
+    mix-blend-mode: normal;
     z-index: 1000 !important
 }
 

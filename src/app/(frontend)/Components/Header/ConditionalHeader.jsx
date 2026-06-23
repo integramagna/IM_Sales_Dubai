@@ -4,6 +4,6 @@ import Header from './Header'
 
 export default function ConditionalHeader() {
   const pathname = usePathname()
-  if (pathname.startsWith('/rabtora')) return null
+  if (pathname.startsWith('/rabtora') || pathname.startsWith('/uiux')) return null
   return <Header />
 }
