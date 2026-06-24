@@ -465,6 +465,7 @@
   }
   .workInternalHeader {
     padding: 0 1rem;
+    position:absolute;
   }
   .workHeadContent .workTitle,
   .workHeadContent h2,

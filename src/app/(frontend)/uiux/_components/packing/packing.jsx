@@ -12,11 +12,7 @@ export default function Packaging() {
                 <div className={styles.mainContainer}>
                     <div className={styles.top}>
                         <div className={styles.toptop}>
-                            <h1 className={styles.heading}>
-                                Your interface is working 24/7
-                                <span className={styles.italicText}>
-                                    Is it working hard enough?
-                                </span>
+                            <h1 className={styles.heading}>Your interface is working 24/7<span className={styles.italicText}>Is it working hard enough?</span>
                             </h1>
                             <p className={styles.para1}>
                                A cluttered layout, a slow-loading page, a call-to-action buried below the fold, each one quietly costs you customers, every single day. Exceptional UI/UX does more than look good. It builds instant credibility, removes friction, and turns first-time visitors into long-term customers.
