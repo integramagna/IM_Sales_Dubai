@@ -72,9 +72,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 8px;
+    gap: 20px;
     align-items: flex-start;
-    padding: 20px 10px 0px 10px;
+    padding: 20px 20px 0px 20px;
     border-radius: 12px;
     min-height: 250px;
     background: rgba(255, 255, 255, 0.05);
@@ -91,7 +91,7 @@
 
 .gridText {
     color: white;
-    font-size: 34px;
+    font-size: 28px;
     font-weight: 400;
     text-align: left;
     font-family: var(--font-pretendard);
@@ -197,7 +197,7 @@
 .grid h3 {
     color: #848484;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 22px;
 }
 
 /* Mobile */
@@ -218,7 +218,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
-        row-gap: 55px;
+        row-gap: 60px;
         grid-auto-rows: 130px;
     }
 
@@ -259,7 +259,7 @@
     }
 
     .cell {
-        min-height: 155px;
+        min-height: 160px;
     }
 
 
@@ -276,13 +276,20 @@
             inset 10px -203px 4px 0px rgba(216, 183, 76, 0.06);
     }
 
+    .cell {
+
+        gap: 8px;
+
+        padding: 15px 10px 0px 10px;
+        border-radius: 12px;
+    }
+
     .green::before,
     .blue::before,
     .yellow::before,
     .purple::before,
     .grey::before,
-    .orange::before
-     {
+    .orange::before {
         content: '';
         position: absolute;
         inset: 0;

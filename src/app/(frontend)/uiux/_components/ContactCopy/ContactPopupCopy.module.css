@@ -83,7 +83,9 @@
   font-style: italic;
   display: inline;
 }
-
+.formHeading p{
+  font-size:22px;
+}
 .form {
   display: flex;
   flex-direction: column;
@@ -112,7 +114,7 @@
   border: 0.5px solid #808080;
   background-color: #ffffff;
   padding: 0 17px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   color: #101820;
   font-family: var(--font-pretendard);

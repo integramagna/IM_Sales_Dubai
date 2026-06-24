@@ -24,7 +24,7 @@
 .headingTop {
     font-family: var(--font-pretendard);
     font-weight: 700;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     width: 70%;
     text-transform: capitalize;
@@ -36,7 +36,7 @@
     padding-top: 30px;
     font-weight: 600;
     line-height: 1.1;
-    font-size: 42px;
+    font-size: 56px;
     text-align: center;
     width: 70%;
     text-transform: capitalize;
@@ -48,10 +48,25 @@
 
 .headingMainItalic {
     font-family: var(--font-awesome-serif);
-    font-size: 42px;
+    font-size: 56px;
     font-style: italic;
     font-weight: 600;
     color: #D78B00;
+}
+
+.headingConversion {
+    font-family: var(--font-pretendard);
+    font-weight: 600;
+    font-size: 56px;
+    text-transform: capitalize;
+}
+
+.inlineLine {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+    align-items: baseline;
 }
 
 .content {
@@ -101,7 +116,7 @@
 .bottom {
     display: flex;
     flex-direction: column;
-    padding: 60px 26px 0px;
+    padding: 20px 26px 0px;
     gap: 30px;
     text-align: center;
     align-items: center;
@@ -156,7 +171,7 @@
 }
 
 .all img {
-    width: clamp(650px, 85vw, 1000px);
+    width: clamp(650px, 85vw, 1200px);
     height: auto;
 }
 
@@ -173,6 +188,20 @@
 
     .headingMain br {
         display: inline;
+    }
+
+    .inlineLine {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+
+    .headingConversion {
+        font-size: 36px;
+    }
+
+    .headingMainItalic {
+        font-size: 36px;
     }
 
     .content {
