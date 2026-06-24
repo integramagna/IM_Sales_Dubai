@@ -55,7 +55,7 @@ export default function Chitti() {
     return (
         <>
             <HomePage />
-            <Brand />
+            {/* <Brand /> */}
             <ProjectsGrid />
             <Packaging />
             <Black />

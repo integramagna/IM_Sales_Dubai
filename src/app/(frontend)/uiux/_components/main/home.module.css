@@ -116,7 +116,7 @@
 .bottom {
     display: flex;
     flex-direction: column;
-    padding: 20px 26px 0px;
+    padding: 20px 26px 100px;
     gap: 30px;
     text-align: center;
     align-items: center;
