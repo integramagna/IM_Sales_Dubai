@@ -42,8 +42,7 @@ export default function HomePage() {
                 <div className={styles.mainContainer}>
                     <div className={styles.top}>
                         <h3 className={styles.headingTop}>THE UAE'S TRUSTED PARTNER FOR UI/UX DESIGN</h3>
-                        <h1 className={styles.headingMain}>More Clicks.<br /> More Signups.<br /> Stronger conversion</h1>
-                        <h1 className={styles.headingMainItalic}>Guaranteed.</h1>
+                        <h1 className={styles.headingMain}>More Clicks.<br /> More Signups.<br /> Stronger conversion <span className={styles.headingMainItalic}>Guaranteed</span></h1>
                     </div>
                 </div>
                 <div className={styles.content}>
