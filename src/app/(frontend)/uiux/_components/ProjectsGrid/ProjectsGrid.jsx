@@ -49,7 +49,7 @@ const projects = [
     tags: 'Order completion rate reached 50% within the first month of launch',
     description: 'Crafting a seamless coffee-first journey that blends discovery, rewards, and everyday convenience.',
     popupImages: [
-      { type: 'landscape', src: '/assets/images/projects/royal/first.png' },
+      { type: 'landscape', src: veer1.src },
       { type: 'double',    src: ['/assets/images/projects/royal/first22.webp', '/assets/images/projects/royal/first33.webp'] },
       { type: 'double',    src: ['/assets/images/projects/royal/first44.webp', '/assets/images/projects/royal/first55.webp'] },
       { type: 'landscape', src: '/assets/images/projects/royal/first66.webp' },
@@ -57,7 +57,6 @@ const projects = [
   },
   {
     src: three,
-    desktopSrc: veer2,
     title: 'Plan B',
     // tags: 'Branding | Hospitality',
     tags: 'Partner deals worth AED 2M+ traced back to the new site in 3 months',
@@ -71,7 +70,6 @@ const projects = [
   },
   {
     src: two,
-    desktopSrc: veer3,
     title: 'Al-Huzaifa',
     // tags: 'Branding | Lifestyle',
     tags: 'Now the #1 source of new client inquiries, ahead of referrals',
@@ -85,7 +83,6 @@ const projects = [
   },
   {
     src: four,
-    desktopSrc: veer4,
     title: 'First Response',
     // tags: 'Branding | Education',
     tags: 'Consultation bookings up 2x since the new homepage went live ',
@@ -172,8 +169,7 @@ const ProjectsGrid = () => {
                 onMouseMove={handleMouseMove}
               >
                 <div className={styles.cardImage}>
-                  <Image src={project.src} alt={project.title} fill sizes="100vw" style={{ objectFit: 'cover' }} className={styles.mobileImg} />
-                  <Image src={project.desktopSrc} alt={project.title} fill sizes="50vw" style={{ objectFit: 'cover' }} className={styles.desktopImg} />
+                  <Image src={project.src} alt={project.title} fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: 'cover' }} />
                 </div>
                 <div className={styles.cardContent}>
                   <div className={styles.cardContentleft}>

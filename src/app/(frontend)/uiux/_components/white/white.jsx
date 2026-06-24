@@ -32,7 +32,7 @@ export default function White() {
                             <div className={styles.num}>3</div>
                             <div className={styles.text}>
                                 Files Delivered.<br />
-                                  Development-ready Figma files, complete with components, specifications, and a clickable prototype delivered straight to your inbox.
+                                 Development-ready Figma files, complete with components, specifications, and a clickable prototype delivered straight to your inbox.
                             </div>
                         </div>
 
