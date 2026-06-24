@@ -14,6 +14,7 @@ import { PackagingForm } from './collections/PackagingForm'
 import { PackagingPartial } from './collections/PackagingPartial'
 import { UiForm } from './collections/UiForm'
 import { UiPartial } from './collections/UiPartial'
+import { UiWebhooks } from './collections/UiWebhooks'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -25,7 +26,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media, BrandingForm, BrandingPartial, PackagingForm, PackagingPartial, UiForm, UiPartial],
+  collections: [Users, Media, BrandingForm, BrandingPartial, PackagingForm, PackagingPartial, UiForm, UiPartial, UiWebhooks],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {

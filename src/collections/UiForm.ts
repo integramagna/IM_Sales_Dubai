@@ -74,7 +74,7 @@ export const UiForm: CollectionConfig = {
 
   hooks: {
     afterChange: [
-      async ({ doc, operation }) => {
+      async ({ doc, operation, req }) => {
         if (operation !== 'create') return
 
         const verifiedSender = process.env.VERIFIED_SENDER || process.env.ADMIN_EMAIL
@@ -104,6 +104,38 @@ export const UiForm: CollectionConfig = {
               <p style="color:#999;font-size:12px;font-family:sans-serif">Submitted on ${submittedAt}</p>
             `,
           }).catch((err) => console.error('❌ Failed to send admin email:', err))
+        }
+
+        try {
+          const { docs: webhooks } = await req.payload.find({
+            collection: 'ui-webhooks',
+            where: {
+              and: [
+                { enabled: { equals: true } },
+                { triggerOn: { equals: 'formSubmission' } },
+              ],
+            },
+            limit: 20,
+          })
+
+          const webhookData = {
+            fullName: doc.fullName,
+            company: doc.company || '',
+            email: doc.email,
+            phone: doc.phone || '',
+            message: doc.message || '',
+            submittedAt: doc.createdAt,
+          }
+
+          webhooks.forEach((webhook: any) => {
+            fetch(webhook.url, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(webhookData),
+            }).catch((err) => console.error(`❌ Webhook "${webhook.label}" failed:`, err?.message))
+          })
+        } catch (err) {
+          console.error('❌ Failed to fire ui-webhooks:', err)
         }
       },
     ],
