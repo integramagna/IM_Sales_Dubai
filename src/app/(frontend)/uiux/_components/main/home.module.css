@@ -111,19 +111,37 @@
     display: none;
 }
 
-.Quote {
+.cta {
     display: flex;
     flex-direction: row;
-    width: fit-content;
     align-items: center;
-    justify-content: space-between;
-    gap: 2px;
-    color: white;
-    background-color: black;
-    border: 1px solid black;
-    border-radius: 80px;
-    padding-left: 10px;
-    padding-right: 6px;
+    gap: 10px;
+    background-color: #000000;
+    border: none;
+    border-radius: 83px;
+    padding: 7.5px 10px 7.5px 18px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    width: fit-content;
+}
+
+.ctaText {
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    font-family: var(--font-pretendard);
+    white-space: nowrap;
+}
+
+.ctaArrow {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
 .para {
@@ -135,23 +153,6 @@
 
 .line {
     display: none;
-}
-
-.icon-align {
-    display: inline-block;
-    vertical-align: -2px;
-}
-
-.arrowIcon {
-    width: 35px;
-    height: 35px;
-}
-
-.txt0 {
-    font-size: 26px;
-    font-family: var(--font-pretendard);
-    padding: 10px 6px 10px 10px;
-    font-weight: 400;
 }
 
 .all img {
@@ -250,6 +251,7 @@
     .bottom {
         text-align: unset;
         align-items: unset;
+        padding-top:0px
     }
 
     .para {
@@ -257,20 +259,22 @@
         font-size: 20px;
     }
 
-    .txt0 {
-        font-size: 18px;
-        font-family: var(--font-pretendard);
-        padding: 10px 6px 10px 10px;
+    .cta {
+        padding: 10px 10px 10px 14px;
     }
 
-    .Quote {
-        gap: 0px;
-        padding-left: 5px;
+    .ctaText {
+        font-size: 14px;
     }
 
-    .arrowIcon {
-        width: 29px;
-        height: 29px;
+    .ctaArrow {
+        width: 24px;
+        height: 24px;
+    }
+
+    .ctaArrow svg {
+        width: 12px;
+        height: 12px;
     }
 
     /* Hide SVGs — replaced by CSS */

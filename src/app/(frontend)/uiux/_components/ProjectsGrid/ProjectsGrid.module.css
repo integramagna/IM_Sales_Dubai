@@ -58,7 +58,12 @@
     border-radius: 10px;
 }
 
+.mobileImg { display: block; }
+.desktopImg { display: none; }
+
 @media (min-width: 769px) {
+    .mobileImg { display: none; }
+    .desktopImg { display: block; }
     .cardImage {
         aspect-ratio: unset;
         height: clamp(200px, 25vw, 380px);
@@ -69,6 +74,7 @@
     justify-content: space-between;
     width: 100%;
     flex-direction: row;
+    /* align-items:center; */
 }
 .cardContentleft{
     display: flex;
@@ -232,6 +238,9 @@
     .workDescription p {
         font-size: 12px;
         font-weight: 400;
+    }
+    .MainContainer{
+      gap:40px;
     }
 }
 
@@ -479,14 +488,18 @@
     }
     .bottom {
         grid-template-columns: 1fr;
-        row-gap: 30px;
+        row-gap: 40px;
     }
     .cardContent {
-      align-items: center;
+      align-items: baseline;
         gap: 12px;
     }
+    /* .cardContentright{
+      position:relative;
+      top:4px;
+    } */
     .card {
-        gap: 8px;
+        gap: 16px;
     }
     .cardContentleft {
         gap: 2px;
@@ -500,6 +513,7 @@
     }
     .cardContentleft {
         width: 80%;
+        gap:10px;
     }
 }
 

@@ -106,29 +106,9 @@ const ArrowIcon = () => (
 const reviews = [
   {
     quote:
-      '"Thanks to Integra Magna\'s efforts, the client has reached a million followers on their Facebook page. The team consistently delivers work on time, is easy to approach, and has a great sense of design and UX. The team\'s UX capabilities and value-driven work are hallmarks of their engagement."',
-    reviewer: 'Rajshikhar Molasaria',
-    designation: 'Brand Manager, Prestige Feed Mills Ltd.',
-    location: 'Indore, India',
-    stars: 5,
-    half: false,
-    rating: '5.0',
-  },
-  {
-    quote:
-      "\"Integra Magna's work has received more than 400 leads for the client's services in two months. The team has delivered on time and had perfect communication with a dedicated account manager. Integra Magna is very responsive and integrates feedback easily. They're always excited to try new ideas.\"",
-    reviewer: 'Prashi Sharma',
-    designation: 'Chief Strategy Officer, First Response Healthcare',
-    location: 'Dubai, United Arab Emirates',
-    stars: 5,
-    half: false,
-    rating: '5.0',
-  },
-  {
-    quote:
-      '"Integra Magna successfully completed the project, meeting all the client\'s expectations. The team was open and communicative, ensuring a smooth workflow. Integra Magna delivered work on time and made adjustments based on feedback. Their attention to detail and high-quality work stood out."',
-    reviewer: 'Mitali Akarte',
-    designation: 'Founder, Mograa Awakkenings',
+      '"Their understanding of both e-commerce and café operations helped us create a unified customer experience across platforms. The UX was thoughtful, intuitive, and aligned with our brand. Within the first month, our order completion rate reached 50%, which was a strong indicator of success."',
+    reviewer: 'Ahmed Al Mansoori',
+    designation: 'Founder, Surge Roastery',
     location: 'United Arab Emirates',
     stars: 5,
     half: false,
@@ -136,30 +116,30 @@ const reviews = [
   },
   {
     quote:
-      '"Thanks to Integra Magna\'s efforts, the client saw a 30% increase in parent walk-ins, a 40% boost in social media engagement, and a 25% rise in event participation and school admissions. Integra Magna was timely, organized, and responsive. Their cultural sensitivity and modern design stood out."',
-    reviewer: 'atharva sharma',
-    designation: 'Director, Satva Education',
-    location: 'Indore, India',
+      '"They translated our vision into a digital experience that felt premium yet conversion-focused. What impressed us most was their strategic thinking beyond aesthetics. In just three months, we were able to trace AED 2M+ worth of partnership deals directly back to the website."',
+    reviewer: 'Khalid Rahman',
+    designation: 'Business Development Director, Plan B Hospitality',
+    location: 'United Arab Emirates',
     stars: 5,
     half: false,
     rating: '5.0',
   },
   {
     quote:
-      '"Thanks to Integra Magna\'s work, the client has launched their website, resulting in improved performance and UX. The team has planned and rolled out a social media campaign, increasing reach and engagement. Moreover, Integra Magna has demonstrated strong project management and timeliness."',
-    reviewer: 'Kuntal Gupta',
-    designation: 'Co-Founder, Magic Table',
-    location: 'Indore, India',
-    stars: 4,
-    half: true,
-    rating: '4.5',
+      '"The team brought our luxury identity to life online while improving the customer journey significantly. The new website became our #1 source of client inquiries and positioned us better than traditional referrals ever did."',
+    reviewer: 'Sara Joseph',
+    designation: 'Marketing Head, Al Huzaifa Furniture',
+    location: 'United Arab Emirates',
+    stars: 5,
+    half: false,
+    rating: '5.0',
   },
   {
     quote:
-      '"Thanks to Integra Magna\'s efforts, the client has seen good reach, impressions, and conversions. Integra Magna has excellent timing and a great understanding of the client\'s needs. The team communicates effectively through virtual meetings, emails, and messages."',
-    reviewer: 'Rohit Agarwal',
-    designation: 'Managing Director, Yashoda Pearls and Jewels',
-    location: 'Hyderabad, India',
+      '"The redesign made our healthcare services feel more approachable and trustworthy. Patients now find it easier to navigate and book consultations. Since launch, we\'ve seen consultation bookings increase by 2x."',
+    reviewer: 'Dr. Omar Al Hashmi',
+    designation: 'Operations Director, First Response Healthcare',
+    location: 'Dubai, United Arab Emirates',
     stars: 5,
     half: false,
     rating: '5.0',

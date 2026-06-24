@@ -4,12 +4,12 @@ import { useEffect, useState } from "react"
 import styles from "./home.module.css"
 import ContactPopupCopy from "../ContactCopy/ContactPopupCopy"
 import Image from "next/image"
-import besanFinal from "./thirdfinal.png"
-import iceCreamFinal from "./secondfinal.png"
-import oilMobile from "./firstfinal.png"
+import besanFinal from "./finalthird.webp"
+import iceCreamFinal from "./finaltwo.webp"
+import oilMobile from "./finalfist.webp"
 
 
-import everything from "./everything.png"
+import everything from "./everything.webp"
 export default function HomePage() {
     const [isOpen, setIsOpen] = useState(false)
     useEffect(() => {
@@ -113,25 +113,14 @@ export default function HomePage() {
                     <p className={styles.para}>
                         We design interfaces that make customers click, sign up, and buy on your website, your app, and everywhere your users encounter your brand.
                     </p>
-                    <div className={styles.Quote} onClick={() => setIsOpen(true)} style={{ cursor: 'pointer' }}>
-                        <div className={styles.txt0}>
-                            Request a Quote
-                        </div>
-                        <div className={styles.circle}>
-                            <svg
-                                style={{ position: 'relative', top: '3px', paddingRight: '5px' }}
-                                className={styles.arrowIcon}
-                                viewBox="0 0 29 29"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <rect x="2" y="2" width="24" height="24" rx="12" fill="white" />
-                                <path d="M10.4913 9.83685L18.4462 9.83685L18.4462 17.7918M17.8938 10.3893L9.82836 18.4547" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <button type="button" className={styles.cta} onClick={() => setIsOpen(true)}>
+                        <span className={styles.ctaText}>Request a Quote</span>
+                        <span className={styles.ctaArrow}>
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.20984 1.2511L13.7433 1.2511L13.7433 12.7845M12.9424 2.05203L1.24872 13.7457" stroke="black" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-
-
-                        </div>
-                    </div>
+                        </span>
+                    </button>
                 </div>
 
             </div>

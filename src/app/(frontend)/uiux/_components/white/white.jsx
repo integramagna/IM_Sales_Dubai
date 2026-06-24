@@ -45,16 +45,14 @@ export default function White() {
                         <p className={styles.para1}>One free consultation is all it takes. Tell us about your product, and we'll show you precisely where your UX is costing you customers.</p>
                     </div>
                     <div className={styles.topbottom}>
-                        <div className={styles.Quote} onClick={() => setIsOpen(true)} style={{ cursor: 'pointer' }}>
-                            <div className={styles.txt0}>
-                                Request a Quote                             </div>
-                            <div className={styles.circle}>
-                                <svg className={styles.iconAlign} width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="2" y="2" width="24" height="24" rx="12" fill="black" />
-                                    <path d="M10.4913 9.83685L18.4462 9.83685L18.4462 17.7918M17.8938 10.3893L9.82836 18.4547" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <button type="button" className={styles.cta} onClick={() => setIsOpen(true)}>
+                            <span className={styles.ctaText}>Request a Quote</span>
+                            <span className={styles.ctaArrow}>
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.20984 1.2511L13.7433 1.2511L13.7433 12.7845M12.9424 2.05203L1.24872 13.7457" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
-                            </div>
-                        </div>
+                            </span>
+                        </button>
                     </div>
                 </div>
             </div>

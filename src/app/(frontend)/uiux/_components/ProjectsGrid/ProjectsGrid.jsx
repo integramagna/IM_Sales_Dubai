@@ -7,6 +7,10 @@ import one from './first.webp';
 import two from './second1.webp';
 import three from './third1.webp';
 import four from './fourth1.webp';
+import veer1 from './veer1.webp';
+import veer2 from './veer2.webp';
+import veer3 from './veer3.webp';
+import veer4 from './veer4.webp';
 
 const ArrowIcon = () => (
  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,6 +43,7 @@ const NextArrow = () => (
 const projects = [
   {
     src: one,
+    desktopSrc: veer1,
     title: 'Surge',
     // tags: 'Branding | Food',
     tags: 'Order completion rate reached 50% within the first month of launch',
@@ -52,6 +57,7 @@ const projects = [
   },
   {
     src: three,
+    desktopSrc: veer2,
     title: 'Plan B',
     // tags: 'Branding | Hospitality',
     tags: 'Partner deals worth AED 2M+ traced back to the new site in 3 months',
@@ -65,6 +71,7 @@ const projects = [
   },
   {
     src: two,
+    desktopSrc: veer3,
     title: 'Al-Huzaifa',
     // tags: 'Branding | Lifestyle',
     tags: 'Now the #1 source of new client inquiries, ahead of referrals',
@@ -78,6 +85,7 @@ const projects = [
   },
   {
     src: four,
+    desktopSrc: veer4,
     title: 'First Response',
     // tags: 'Branding | Education',
     tags: 'Consultation bookings up 2x since the new homepage went live ',
@@ -164,7 +172,8 @@ const ProjectsGrid = () => {
                 onMouseMove={handleMouseMove}
               >
                 <div className={styles.cardImage}>
-                  <Image src={project.src} alt={project.title} fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: 'cover' }} />
+                  <Image src={project.src} alt={project.title} fill sizes="100vw" style={{ objectFit: 'cover' }} className={styles.mobileImg} />
+                  <Image src={project.desktopSrc} alt={project.title} fill sizes="50vw" style={{ objectFit: 'cover' }} className={styles.desktopImg} />
                 </div>
                 <div className={styles.cardContent}>
                   <div className={styles.cardContentleft}>

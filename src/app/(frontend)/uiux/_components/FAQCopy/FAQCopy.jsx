@@ -4,20 +4,20 @@ import styles from './FAQCopy.module.css'
 
 const faqs = [
   {
-    question: 'How much does a UI/UX project cost?',
-    answer: 'Every project is scoped based on what you actually need, we don\'t believe in one-size-fits-all pricing. Book a free brand audit call and we\'ll give you a clear, honest quote within 24 hours. No vague estimates, no surprise additions.',
+    question: 'What does a UI/UX project cost?',
+    answer: 'Every engagement is scoped around your specific needs we don\'t believe in one-size-fits-all pricing. Book a free brand audit call and receive a clear, transparent quote within 24 hours. No vague estimates, no hidden additions.',
   },
   {
     question: 'What if I already have a design and just need it improved?',
-    answer: 'We do UX audits too, we review your current product, identify friction points, and give you a prioritized list of changes that will move the needle on conversions.',
+    answer: 'We also conduct UX audits reviewing your current product, identifying friction points, and providing a prioritized roadmap of changes that move the needle on conversions.',
   },
 {
   question: 'What if I\'m not happy with the direction?',
-    answer: 'You see wireframes before we move to high-fidelity screens, so misalignment gets caught early, not after final files are delivered. If something\'s off, we adjust before moving forward.',
+    answer: 'You review wireframes before we move to high-fidelity screens, so any misalignment is caught early not after final files are delivered. If something\'s off, we adjust before proceeding.',
   },
 {
   question: 'Do I need to know exactly what I want before booking the call?',
-    answer: 'No most clients don\'t. Tell us about your product, your users, and where you\'re losing them, and we\'ll tell you exactly what needs to change. That\'s what the free call is for.',
+    answer: 'No, most clients don\'t. Share your product, your users, and where you\'re losing them, and we\'ll tell you exactly what needs to change. That\'s precisely what the free consultation is for.',
   },
 // {
 //   question: 'Do you work with early-stage startups or only established businesses?',
