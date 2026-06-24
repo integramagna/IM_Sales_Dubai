@@ -446,3 +446,16 @@
         min-height: 180px;
     }
 }
+
+@media (max-width:450px){
+    .cell {
+        min-height: 190px;
+    }
+    .grid {
+        row-gap:90px;
+    }
+    .main{
+        padding-bottom:130px;
+    }
+
+}
