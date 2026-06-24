@@ -208,7 +208,7 @@
 
     .main {
         background: black;
-        padding: 40px 24px 85px 24px;
+        padding: 40px 24px 95px 24px;
         border-radius: 0;
         border-radius: 0px;
         max-width: unset;
@@ -218,7 +218,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
-        row-gap: 45px;
+        row-gap: 55px;
         grid-auto-rows: 130px;
     }
 
@@ -259,7 +259,7 @@
     }
 
     .cell {
-        min-height: 145px;
+        min-height: 155px;
     }
 
 

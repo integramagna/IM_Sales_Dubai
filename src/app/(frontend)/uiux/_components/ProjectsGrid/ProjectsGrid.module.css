@@ -491,7 +491,7 @@
         row-gap: 40px;
     }
     .cardContent {
-      align-items: baseline;
+      align-items: flex-start;
         gap: 12px;
     }
     /* .cardContentright{
