@@ -31,9 +31,9 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.rabtora.com/twitter-image.png',
+        url: 'https://impact.rabtora.ae/og.png',
         width: 1200,
-        height: 627,
+        height: 630,
         alt: 'Rabtora Social Preview',
       },
     ],
@@ -42,7 +42,7 @@ export const metadata = {
     card: 'summary_large_image',
     site: '@Rabtora',
     title: 'Rabtora | Branding & UX/UI Design Agency',
-    images: ['https://www.rabtora.com/twitter-image.png'],
+    images: ['https://impact.rabtora.ae/og.png'],
   },
   icons: {
     icon: [{ url: '/favicon.ico', type: 'image/x-icon' }],

@@ -20,9 +20,9 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.rabtora.com/twitter-image.png',
+        url: 'https://impact.rabtora.ae/og.png',
         width: 1200,
-        height: 627,
+        height: 630,
         alt: 'Rabtora UI/UX Design Agency Dubai',
       },
     ],
@@ -31,7 +31,7 @@ export const metadata = {
     card: 'summary_large_image',
     site: '@Rabtora',
     title: 'UI/UX Design Agency in Dubai | Rabtora',
-    images: ['https://www.rabtora.com/twitter-image.png'],
+    images: ['https://impact.rabtora.ae/og.png'],
   },
   alternates: {
     canonical: 'https://rabtora.com/uiux',
