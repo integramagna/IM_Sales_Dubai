@@ -217,7 +217,7 @@
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 10px;
+        gap: 13px;
         row-gap: 60px;
         grid-auto-rows: 130px;
     }
@@ -447,7 +447,7 @@
     }
 }
 
-@media (max-width:450px){
+@media (max-width:400px){
     .cell {
         min-height: 190px;
     }
@@ -455,7 +455,7 @@
         row-gap:90px;
     }
     .main{
-        padding-bottom:130px;
+        padding-bottom:125px;
     }
 
 }
