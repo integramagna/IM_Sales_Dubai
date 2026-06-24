@@ -20,7 +20,7 @@ export default function StickyCta() {
 
     return (
         <>
-        <div className={`${styles.stickyOuter}${!visible ? ` ${styles.hidden}` : ''}`}>
+        <div className={`${styles.stickyOuter}${(!visible || isOpen) ? ` ${styles.hidden}` : ''}`}>
             <div
                 className={styles.glassBorder}
                 style={{

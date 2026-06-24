@@ -252,7 +252,7 @@ router.push('/uiux/thank-you')
           </div>
           {submitError && <span className={styles.errorMsg}>{submitError}</span>}
           <div className={styles.ctaRow}>
-            <button type="submit" className={styles.cta} disabled={submitting}>
+            <button type="submit" className={`${styles.cta} ${!formData.fullName.trim() || !formData.email.trim() ? styles.ctaMuted : ''}`} disabled={submitting}>
               <span className={styles.ctaText}>
                 {submitting ? 'Sending…' : 'Request a Quote'}
               </span>

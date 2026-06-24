@@ -44,7 +44,7 @@
 .row {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .num {
@@ -53,11 +53,13 @@
     font-weight: 700;
     font-family: var(--font-pretendard);
     flex-shrink: 0;
-    background: linear-gradient(#3d3d3d 0%, #ffffff 85%);
+    background: linear-gradient(#4d4d4d 0%, #fff 80%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
+    position:relative;
+    bottom:6px;
 }
 
 .text {

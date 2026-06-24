@@ -186,11 +186,9 @@
   display: flex;
   justify-content: flex-end;
   padding: 0 2rem;
-  position: sticky;
+  position: absolute;
   top: 0;
-  width: 100%;
-  background-color: #fff;
-  border-radius: 2rem 2rem 0 0;
+  right: 0;
   z-index: 2;
 }
 
@@ -315,7 +313,7 @@
 .popupTwoImages .twoImage {
   width: 100%;
   height: auto;
-  border-radius: 1rem;
+  border-radius: 10px;
   object-fit: cover;
   display: block;
 }
@@ -401,7 +399,7 @@
     pointer-events: auto;
   }
   .workHeadContent {
-    gap: 5px;
+    gap: 10px;
   }
   .customCursor {
     display: none;
@@ -418,12 +416,13 @@
     pointer-events: auto;
   }
   .workInternalMain {
-    padding: 2rem 1.5rem;
+    padding: 4rem 1.5rem;
     max-width: 100%;
   }
   .popupContent p{
     font-weight:400;
-    font-size:12px;
+    font-size:16px;
+    margin-bottom:12px;
   }
   /* .workHeadContent{
     font-weight:700;
@@ -447,7 +446,6 @@
     border-radius: 1.25rem;
   }
   .workInternalHeader {
-    border-radius: 1.25rem 1.25rem 0 0;
     padding: 0 1rem;
   }
   .workHeadContent .workTitle,
@@ -464,7 +462,7 @@
   .closeButton {
     height: 2.25rem;
     width: 2.25rem;
-    margin: 0.75rem 0.5rem;
+    margin: 2rem 0.5rem;
   }
   .closeButton svg {
     width: 14px;
@@ -484,20 +482,21 @@
         row-gap: 30px;
     }
     .cardContent {
+      align-items: center;
         gap: 12px;
     }
     .card {
-        gap: 12px;
+        gap: 8px;
     }
     .cardContentleft {
-        gap: 4px;
+        gap: 2px;
     }
     .cardContentleft h3 {
         font-size: 18px;
         font-weight:500;
     }
     .cardContentleft p {
-        font-size: 14px;
+        font-size: 16px;
     }
     .cardContentleft {
         width: 80%;

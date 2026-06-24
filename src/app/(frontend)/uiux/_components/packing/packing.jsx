@@ -37,7 +37,7 @@ export default function Packaging() {
                         </div>
                     </div>
                     <div className={styles.bottom}>
-                        <h1 className={styles.Choose} style={{ fontFamily: "var(--font-awesome-serif)", fontSize: "28px" }}>Why UAE businesses choose us ?</h1>
+                        <h1 className={styles.Choose} style={{ fontFamily: "var(--font-awesome-serif)", fontSize: "28px", color: "black" }}>Why UAE businesses choose us ?</h1>
                         <h1 className={styles.ul}>Designed to convert. Built to last.</h1>
                         <div className={styles.uls}>
                             <div className={styles.ul}>

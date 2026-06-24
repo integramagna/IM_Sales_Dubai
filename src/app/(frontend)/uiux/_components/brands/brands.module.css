@@ -29,11 +29,13 @@
     width: 100%;
     justify-content: center;
     gap: clamp(20px, 4vw, 70px);
+    align-items: center;
+    padding: 0 25px;
 }
 
 .Logos img {
     width: auto;
-    height: clamp(40px, 5vw, 65px);
+    /* height: clamp(40px, 5vw, 65px); */
 }
 
 .mid {
@@ -192,7 +194,7 @@
     .Logos img {
         height: clamp(25px, 14vw, 80px);
         width: auto;
-        max-width: clamp(45px, 14vw, 80px);
+        max-width: clamp(45px, 17vw, 80px);
         flex-shrink: 1;
         object-fit: contain;
     }

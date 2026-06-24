@@ -300,7 +300,7 @@ const Contact = () => {
                                 </div>
                                 {submitError && <span className={styles.errorMsg}>{submitError}</span>}
                                 <div className={styles.ctaRow}>
-                                    <button type="submit" className={styles.cta} disabled={submitting}>
+                                    <button type="submit" className={`${styles.cta} ${!formData.fullName.trim() || !formData.email.trim() ? styles.ctaMuted : ''}`} disabled={submitting}>
                                         <span className={styles.ctaText}>{submitting ? 'Sending…' : 'Request a Quote '}</span>
                                         <span className={styles.ctaArrow}>
                                             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">

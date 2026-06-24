@@ -4,14 +4,11 @@ import { useEffect, useState } from "react"
 import styles from "./home.module.css"
 import ContactPopupCopy from "../ContactCopy/ContactPopupCopy"
 import Image from "next/image"
-import oil from "./oil.png"
-import icecream1 from "./icecream1.png"
 import besanFinal from "./thirdfinal.png"
 import iceCreamFinal from "./secondfinal.png"
 import oilMobile from "./firstfinal.png"
-import besan from "./besan.png"
-import besanArrow from "./besanArrow.png"
-import icecreamArrow from "./icecreamArrow.png"
+
+
 import everything from "./everything.png"
 export default function HomePage() {
     const [isOpen, setIsOpen] = useState(false)
@@ -45,7 +42,7 @@ export default function HomePage() {
                 <div className={styles.mainContainer}>
                     <div className={styles.top}>
                         <h3 className={styles.headingTop}>THE UAE'S TRUSTED PARTNER FOR UI/UX DESIGN</h3>
-                        <h1 className={styles.headingMain}>More Clicks.<br/> More Signups.<br/> Stronger conversion</h1>
+                        <h1 className={styles.headingMain}>More Clicks.<br /> More Signups.<br /> Stronger conversion</h1>
                         <h1 className={styles.headingMainItalic}>Guaranteed.</h1>
                     </div>
                 </div>
@@ -68,7 +65,8 @@ export default function HomePage() {
                             <h2 className={styles.txtpara}>More consumers tried the product off retail shelves.</h2>
                         </div>
                     </div> */}
-                    <div className={styles.mobCell1}>
+                    <div className={styles.mobCell1}
+                        style={{ marginLeft: "20px" }} >
                         <Image
                             src={oilMobile}
                             alt="oil"
@@ -85,7 +83,8 @@ export default function HomePage() {
                             
                         </div>
                     </div> */}
-                    <div className={`${styles.mobCell1} ${styles.right}`}>
+                    <div className={`${styles.mobCell1} ${styles.right}`}
+                        style={{ marginRight: "20px" }} >
                         <Image
                             src={iceCreamFinal}
                             alt="oil"
@@ -102,7 +101,8 @@ export default function HomePage() {
                             <h2 className={styles.txtpara}>Higher price point. Same product.</h2>
                         </div>
                     </div> */}
-                    <div className={`${styles.mobCell1} ${styles.left}`}>
+                    <div className={`${styles.mobCell1} ${styles.left}`}
+                        style={{ marginLeft: "20px" }} >
                         <Image
                             src={besanFinal}
                             alt="oil"
@@ -111,7 +111,7 @@ export default function HomePage() {
                 </div>
                 <div className={styles.bottom}>
                     <p className={styles.para}>
-                       We design interfaces that make customers click, sign up, and buy on your website, your app, and everywhere your users encounter your brand.
+                        We design interfaces that make customers click, sign up, and buy on your website, your app, and everywhere your users encounter your brand.
                     </p>
                     <div className={styles.Quote} onClick={() => setIsOpen(true)} style={{ cursor: 'pointer' }}>
                         <div className={styles.txt0}>
