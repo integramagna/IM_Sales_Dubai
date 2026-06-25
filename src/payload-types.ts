@@ -75,6 +75,7 @@ export interface Config {
     'packaging-partials': PackagingPartial;
     'ui-forms': UiForm;
     'ui-partials': UiPartial;
+    'ui-webhooks': UiWebhook;
     exports: Export;
     imports: Import;
     'payload-kv': PayloadKv;
@@ -93,6 +94,7 @@ export interface Config {
     'packaging-partials': PackagingPartialsSelect<false> | PackagingPartialsSelect<true>;
     'ui-forms': UiFormsSelect<false> | UiFormsSelect<true>;
     'ui-partials': UiPartialsSelect<false> | UiPartialsSelect<true>;
+    'ui-webhooks': UiWebhooksSelect<false> | UiWebhooksSelect<true>;
     exports: ExportsSelect<false> | ExportsSelect<true>;
     imports: ImportsSelect<false> | ImportsSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
@@ -288,6 +290,19 @@ export interface UiPartial {
    * Which field they filled last before leaving
    */
   lastField?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ui-webhooks".
+ */
+export interface UiWebhook {
+  id: number;
+  label: string;
+  url: string;
+  enabled?: boolean | null;
+  triggerOn: 'formSubmission';
   updatedAt: string;
   createdAt: string;
 }
@@ -512,6 +527,10 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'ui-partials';
         value: number | UiPartial;
+      } | null)
+    | ({
+        relationTo: 'ui-webhooks';
+        value: number | UiWebhook;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -681,6 +700,18 @@ export interface UiPartialsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ui-webhooks_select".
+ */
+export interface UiWebhooksSelect<T extends boolean = true> {
+  label?: T;
+  url?: T;
+  enabled?: T;
+  triggerOn?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "exports_select".
  */
 export interface ExportsSelect<T extends boolean = true> {
@@ -836,6 +867,7 @@ export interface TaskCreateCollectionExport {
       | 'packaging-partials'
       | 'ui-forms'
       | 'ui-partials'
+      | 'ui-webhooks'
       | 'exports'
       | 'imports';
     drafts?: ('yes' | 'no') | null;
