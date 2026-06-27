@@ -480,6 +480,7 @@
 
     .input {
         height: 52px;
+        font-size: 14px;
     }
 
     .input::placeholder {
@@ -488,6 +489,7 @@
 
     .textarea {
         height: 130px;
+        font-size: 14px;
     }
 
     .textarea::placeholder {
