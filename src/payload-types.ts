@@ -267,7 +267,7 @@ export interface UiForm {
   fullName: string;
   company?: string | null;
   email: string;
-  phone?: string | null;
+  phone: string;
   message?: string | null;
   updatedAt: string;
   createdAt: string;

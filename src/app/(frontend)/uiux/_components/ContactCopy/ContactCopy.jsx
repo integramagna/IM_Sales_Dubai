@@ -17,6 +17,8 @@ const logos = [
     { src: Logo4, alt: 'Brand Logo 4' },
 ]
 
+const JOB_KEYWORDS = /\b(job|jobs|recruiting|resume|interview|cover\s+letter|vacancy|vacancies)\b/i
+
 const Contact = () => {
     const router = useRouter()
     const [formData, setFormData] = useState({
@@ -37,6 +39,8 @@ const Contact = () => {
             setFormData((prev) => ({ ...prev, phone: prev.phone || dialCode }))
         }
     }, [dialCode])
+
+    const isJobRelated = JOB_KEYWORDS.test(formData.message)
 
     const validateField = (name, value) => {
         if (name === 'fullName') {
@@ -122,6 +126,10 @@ const Contact = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
+        if (isJobRelated) {
+            setSubmitError('This form is for brand and project inquiries only.')
+            return
+        }
         const validationErrors = validate()
         if (Object.keys(validationErrors).length > 0) {
             setErrors(validationErrors)
@@ -307,7 +315,7 @@ const Contact = () => {
                                 </div>
                                 {submitError && <span className={styles.errorMsg}>{submitError}</span>}
                                 <div className={styles.ctaRow}>
-                                    <button type="submit" className={`${styles.cta} ${!formData.fullName.trim() || !formData.email.trim() ? styles.ctaMuted : ''}`} disabled={submitting}>
+                                    <button type="submit" className={`${styles.cta} ${!formData.fullName.trim() || !formData.email.trim() || isJobRelated ? styles.ctaMuted : ''}`} disabled={submitting}>
                                         <span className={styles.ctaText}>{submitting ? 'Sending…' : 'Request a Quote '}</span>
                                         <span className={styles.ctaArrow}>
                                             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">

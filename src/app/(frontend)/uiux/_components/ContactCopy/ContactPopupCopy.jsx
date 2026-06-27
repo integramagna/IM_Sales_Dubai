@@ -3,6 +3,8 @@ import React, { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 import styles from './ContactPopupCopy.module.css'
 import { useCountryDialCode } from '../../../../../hooks/useCountryDialCode'
+const JOB_KEYWORDS = /\b(job|jobs|recruiting|resume|interview|cover\s+letter|vacancy|vacancies)\b/i
+
 const getOrCreateSessionId = () => {
   let id = localStorage.getItem('pkg_partial_session')
   if (!id) {
@@ -54,6 +56,8 @@ const ContactPopup = ({ isOpen, onClose }) => {
   }, [dialCode])
 
   if (!isOpen) return null
+
+  const isJobRelated = JOB_KEYWORDS.test(formData.message)
 
   const validateField = (name, value) => {
     if (name === 'fullName') {
@@ -132,6 +136,10 @@ const handleBlur = (e) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    if (isJobRelated) {
+      setSubmitError('This form is for brand and project inquiries only.')
+      return
+    }
     const validationErrors = validate()
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors)
@@ -258,7 +266,7 @@ router.push('/uiux/thank-you')
           </div>
           {submitError && <span className={styles.errorMsg}>{submitError}</span>}
           <div className={styles.ctaRow}>
-            <button type="submit" className={`${styles.cta} ${!formData.fullName.trim() || !formData.email.trim() ? styles.ctaMuted : ''}`} disabled={submitting}>
+            <button type="submit" className={`${styles.cta} ${!formData.fullName.trim() || !formData.email.trim() || isJobRelated ? styles.ctaMuted : ''}`} disabled={submitting}>
               <span className={styles.ctaText}>
                 {submitting ? 'Sending…' : 'Request a Quote'}
               </span>
