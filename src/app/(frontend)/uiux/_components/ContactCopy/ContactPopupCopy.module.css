@@ -177,7 +177,7 @@
   color: #848484;
   font-family: var(--font-pretendard);
   text-align: right;
-  margin-bottom: 28px;
+  margin-bottom: 8px;
 }
 
 .ctaRow {
@@ -267,7 +267,11 @@
   }
 
   .charCount {
-    margin-bottom: 20px;
+    margin-bottom: 6px;
+  }
+
+  .ctaRow {
+    margin-top: 12px;
   }
 
   .cta {
