@@ -61,7 +61,7 @@ export const UiForm: CollectionConfig = {
       type: 'row',
       fields: [
         { name: 'email', label: 'Work Email', type: 'email', required: true },
-        { name: 'phone', label: 'Contact Number', type: 'text' },
+        { name: 'phone', label: 'Contact Number', type: 'text', required: true },
       ],
     },
     {

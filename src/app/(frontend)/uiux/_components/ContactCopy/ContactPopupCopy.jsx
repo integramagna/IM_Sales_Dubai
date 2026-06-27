@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 import styles from './ContactPopupCopy.module.css'
+import { useCountryDialCode } from '../../../../../hooks/useCountryDialCode'
 const getOrCreateSessionId = () => {
   let id = localStorage.getItem('pkg_partial_session')
   if (!id) {
@@ -35,14 +36,22 @@ const ContactPopup = ({ isOpen, onClose }) => {
     }
   }, [isOpen])
 
+  const dialCode = useCountryDialCode()
+
   useEffect(() => {
     if (!isOpen) {
-      setFormData({ fullName: '', company: '', email: '', phone: '', message: '' })
+      setFormData({ fullName: '', company: '', email: '', phone: dialCode, message: '' })
       setErrors({})
       setSubmitError('')
       setSubmitting(false)
     }
-  }, [isOpen])
+  }, [isOpen, dialCode])
+
+  useEffect(() => {
+    if (dialCode) {
+      setFormData((prev) => ({ ...prev, phone: prev.phone || dialCode }))
+    }
+  }, [dialCode])
 
   if (!isOpen) return null
 
@@ -59,11 +68,8 @@ const ContactPopup = ({ isOpen, onClose }) => {
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) return 'Please enter a valid email address.'
     }
     if (name === 'phone') {
-      if (value.trim()) {
-        const digits = value.replace(/\D/g, '')
-        if (digits.length < 7 || digits.length > 15)
-          return 'Please enter a valid phone number (7–15 digits).'
-      }
+      if (!value.trim()) return 'Phone number is required.'
+      if (!/^\+[1-9][\d\s]{6,18}$/.test(value.trim())) return 'Please include your country code (e.g. +971 50 123 4567).'
     }
     if (name === 'message') {
       if (value.trim().length > 500) return 'Message must be 500 characters or fewer.'
@@ -230,7 +236,7 @@ router.push('/uiux/thank-you')
                 className={`${styles.input} ${errors.phone ? styles.inputError : ''}`}
                 type="tel"
                 name="phone"
-                placeholder="Contact no."
+                placeholder="Contact no.*"
                 value={formData.phone}
                 onChange={handleChange}
                 onBlur={handleBlur}

@@ -1,7 +1,8 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import styles from './ContactCopy.module.css'
+import { useCountryDialCode } from '../../../../../hooks/useCountryDialCode'
 import Image from 'next/image'
 import Misbah from './founder.png'
 import Logo1 from './1.png'
@@ -29,6 +30,14 @@ const Contact = () => {
     const [submitting, setSubmitting] = useState(false)
     const [submitError, setSubmitError] = useState('')
 
+    const dialCode = useCountryDialCode()
+
+    useEffect(() => {
+        if (dialCode) {
+            setFormData((prev) => ({ ...prev, phone: prev.phone || dialCode }))
+        }
+    }, [dialCode])
+
     const validateField = (name, value) => {
         if (name === 'fullName') {
             if (!value.trim()) return 'Full name is required.'
@@ -42,10 +51,8 @@ const Contact = () => {
             if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) return 'Please enter a valid email address.'
         }
         if (name === 'phone') {
-            if (value.trim()) {
-                const digits = value.replace(/\D/g, '')
-                if (digits.length < 7 || digits.length > 15) return 'Please enter a valid phone number (7–15 digits).'
-            }
+            if (!value.trim()) return 'Phone number is required.'
+            if (!/^\+[1-9][\d\s]{6,18}$/.test(value.trim())) return 'Please include your country code (e.g. +971 50 123 4567).'
         }
         if (name === 'message') {
             if (value.trim().length > 500) return 'Message must be 500 characters or fewer.'
@@ -276,7 +283,7 @@ const Contact = () => {
                                             className={`${styles.input} ${errors.phone ? styles.inputError : ''}`}
                                             type="tel"
                                             name="phone"
-                                            placeholder="Contact no."
+                                            placeholder="Contact no.*"
                                             value={formData.phone}
                                             onChange={handleChange}
                                             onBlur={handleBlur}

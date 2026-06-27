@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 import styles from './ContactPopupCopy.module.css'
+import { useCountryDialCode } from '../../../../../hooks/useCountryDialCode'
 const getOrCreateSessionId = () => {
   let id = localStorage.getItem('pkg_partial_session')
   if (!id) {
@@ -35,14 +36,22 @@ const ContactPopup = ({ isOpen, onClose }) => {
     }
   }, [isOpen])
 
+  const dialCode = useCountryDialCode()
+
   useEffect(() => {
     if (!isOpen) {
-      setFormData({ fullName: '', company: '', email: '', phone: '', message: '' })
+      setFormData({ fullName: '', company: '', email: '', phone: dialCode, message: '' })
       setErrors({})
       setSubmitError('')
       setSubmitting(false)
     }
-  }, [isOpen])
+  }, [isOpen, dialCode])
+
+  useEffect(() => {
+    if (dialCode) {
+      setFormData((prev) => ({ ...prev, phone: prev.phone || dialCode }))
+    }
+  }, [dialCode])
 
   if (!isOpen) return null
 

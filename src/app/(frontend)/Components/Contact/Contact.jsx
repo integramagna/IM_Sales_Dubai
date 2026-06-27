@@ -1,7 +1,8 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import styles from './Contact.module.css'
+import { useCountryDialCode } from '../../../../hooks/useCountryDialCode'
 import Image from 'next/image'
 import Misbah from './founder.png'
 import Logo1 from './1.png'
@@ -28,6 +29,14 @@ const Contact = () => {
   const [errors, setErrors] = useState({})
   const [submitting, setSubmitting] = useState(false)
   const [submitError, setSubmitError] = useState('')
+
+  const dialCode = useCountryDialCode()
+
+  useEffect(() => {
+    if (dialCode) {
+      setFormData((prev) => ({ ...prev, phone: prev.phone || dialCode }))
+    }
+  }, [dialCode])
 
   const validateField = (name, value) => {
     if (name === 'fullName') {
