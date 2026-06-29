@@ -65,6 +65,7 @@ const ContactPopup = ({ isOpen, onClose }) => {
       if (value.trim().length > 50) return 'Name must be 50 characters or fewer.'
     }
     if (name === 'company') {
+      if (!value.trim()) return 'Company name is required.'
       if (value.trim().length > 60) return 'Company name must be 60 characters or fewer.'
     }
     if (name === 'email') {
@@ -218,7 +219,7 @@ router.push('/uiux/thank-you')
                 className={`${styles.input} ${errors.company ? styles.inputError : ''}`}
                 type="text"
                 name="company"
-                placeholder="Company/ Organization"
+                placeholder="Company/ Organization*"
                 value={formData.company}
                 onChange={handleChange}
                 onBlur={handleBlur}
