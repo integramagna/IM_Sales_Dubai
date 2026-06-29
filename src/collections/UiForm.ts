@@ -127,13 +127,31 @@ export const UiForm: CollectionConfig = {
             submittedAt: doc.createdAt,
           }
 
-          webhooks.forEach((webhook: any) => {
-            fetch(webhook.url, {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify(webhookData),
-            }).catch((err) => console.error(`❌ Webhook "${webhook.label}" failed:`, err?.message))
-          })
+          const fireWebhook = async (webhook: any) => {
+            for (let attempt = 1; attempt <= 2; attempt++) {
+              const ctrl = new AbortController()
+              const timer = setTimeout(() => ctrl.abort(), 10000)
+              try {
+                const res = await fetch(webhook.url, {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify(webhookData),
+                  signal: ctrl.signal,
+                })
+                clearTimeout(timer)
+                if (!res.ok) throw new Error(`Status ${res.status}`)
+                console.log(`✅ Webhook "${webhook.label}" fired (attempt ${attempt})`)
+                return
+              } catch (err: any) {
+                clearTimeout(timer)
+                console.error(`❌ Webhook "${webhook.label}" attempt ${attempt} failed:`, err?.message)
+                if (attempt === 2) throw err
+                await new Promise((r) => setTimeout(r, 400))
+              }
+            }
+          }
+
+          await Promise.all(webhooks.map((webhook: any) => fireWebhook(webhook).catch(() => {})))
         } catch (err) {
           console.error('❌ Failed to fire ui-webhooks:', err)
         }
