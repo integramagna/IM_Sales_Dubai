@@ -1,7 +1,6 @@
 import React from 'react'
 import './globals.css'
 import ConditionalHeader from './Components/Header/ConditionalHeader'
-import Analytics from './Analytics'
 
 export const metadata = {
   title: 'Rabtora | Branding, Strategy, and UX UI Design Agency',
@@ -133,7 +132,6 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
       </head>
       <body>
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9P3HHX4" height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe></noscript>
-        <Analytics />
         <ConditionalHeader />
         <main>{children}</main>
       </body>
