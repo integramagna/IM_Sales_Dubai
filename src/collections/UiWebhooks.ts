@@ -2,6 +2,10 @@ import type { CollectionConfig } from 'payload'
 
 export const UiWebhooks: CollectionConfig = {
   slug: 'ui-webhooks',
+  labels: {
+    singular: 'Form Webhook',
+    plural: 'Form Webhooks',
+  },
   admin: {
     useAsTitle: 'label',
     defaultColumns: ['label', 'enabled', 'triggerOn', 'updatedAt'],
@@ -40,6 +44,7 @@ export const UiWebhooks: CollectionConfig = {
       defaultValue: 'formSubmission',
       options: [
         { label: 'UI Form Submission', value: 'formSubmission' },
+        { label: 'Signage Form Submission', value: 'signageFormSubmission' },
       ],
     },
   ],

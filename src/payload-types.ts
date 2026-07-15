@@ -75,6 +75,8 @@ export interface Config {
     'packaging-partials': PackagingPartial;
     'ui-forms': UiForm;
     'ui-partials': UiPartial;
+    'signage-forms': SignageForm;
+    'signage-partials': SignagePartial;
     'ui-webhooks': UiWebhook;
     exports: Export;
     imports: Import;
@@ -94,6 +96,8 @@ export interface Config {
     'packaging-partials': PackagingPartialsSelect<false> | PackagingPartialsSelect<true>;
     'ui-forms': UiFormsSelect<false> | UiFormsSelect<true>;
     'ui-partials': UiPartialsSelect<false> | UiPartialsSelect<true>;
+    'signage-forms': SignageFormsSelect<false> | SignageFormsSelect<true>;
+    'signage-partials': SignagePartialsSelect<false> | SignagePartialsSelect<true>;
     'ui-webhooks': UiWebhooksSelect<false> | UiWebhooksSelect<true>;
     exports: ExportsSelect<false> | ExportsSelect<true>;
     imports: ImportsSelect<false> | ImportsSelect<true>;
@@ -295,6 +299,41 @@ export interface UiPartial {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "signage-forms".
+ */
+export interface SignageForm {
+  id: number;
+  fullName: string;
+  company?: string | null;
+  email: string;
+  phone: string;
+  message?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Users who started filling the Signage form but did not submit.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "signage-partials".
+ */
+export interface SignagePartial {
+  id: number;
+  sessionId?: string | null;
+  fullName?: string | null;
+  company?: string | null;
+  email?: string | null;
+  phone?: string | null;
+  message?: string | null;
+  /**
+   * Which field they filled last before leaving
+   */
+  lastField?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "ui-webhooks".
  */
 export interface UiWebhook {
@@ -302,7 +341,7 @@ export interface UiWebhook {
   label: string;
   url: string;
   enabled?: boolean | null;
-  triggerOn: 'formSubmission';
+  triggerOn: 'formSubmission' | 'signageFormSubmission';
   updatedAt: string;
   createdAt: string;
 }
@@ -529,6 +568,14 @@ export interface PayloadLockedDocument {
         value: number | UiPartial;
       } | null)
     | ({
+        relationTo: 'signage-forms';
+        value: number | SignageForm;
+      } | null)
+    | ({
+        relationTo: 'signage-partials';
+        value: number | SignagePartial;
+      } | null)
+    | ({
         relationTo: 'ui-webhooks';
         value: number | UiWebhook;
       } | null);
@@ -688,6 +735,34 @@ export interface UiFormsSelect<T extends boolean = true> {
  * via the `definition` "ui-partials_select".
  */
 export interface UiPartialsSelect<T extends boolean = true> {
+  sessionId?: T;
+  fullName?: T;
+  company?: T;
+  email?: T;
+  phone?: T;
+  message?: T;
+  lastField?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "signage-forms_select".
+ */
+export interface SignageFormsSelect<T extends boolean = true> {
+  fullName?: T;
+  company?: T;
+  email?: T;
+  phone?: T;
+  message?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "signage-partials_select".
+ */
+export interface SignagePartialsSelect<T extends boolean = true> {
   sessionId?: T;
   fullName?: T;
   company?: T;
@@ -867,6 +942,8 @@ export interface TaskCreateCollectionExport {
       | 'packaging-partials'
       | 'ui-forms'
       | 'ui-partials'
+      | 'signage-forms'
+      | 'signage-partials'
       | 'ui-webhooks'
       | 'exports'
       | 'imports';

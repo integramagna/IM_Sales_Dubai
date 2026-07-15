@@ -68,6 +68,7 @@
   --fs-40: clamp(1.13rem, 1.39vi + 0.83rem, 2.5rem);
   --fs-26: clamp(1.13rem, 0.51vi + 1.02rem, 1.63rem);
   --fs-34: clamp(1.31rem, 0.82vi + 1.14rem, 2.13rem);
+  --fs-72: clamp(2.25rem, 2.28vi + 1.77rem, 4.5rem);
   --color-bg: #f5f5f5;
   --color-text: #222;
   --color-accent: #0070f3;

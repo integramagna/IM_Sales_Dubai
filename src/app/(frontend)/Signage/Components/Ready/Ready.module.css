@@ -1,0 +1,151 @@
+.main {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #000000;
+    padding: 0 clamp(24px, 13vw, 250px) 0 clamp(24px, 16vw, 300px);
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background:
+        radial-gradient(90% 140% at 48% 18%, #000000 0%, #060102 32%, rgba(159, 114, 0, 0.55) 100%),
+        #000000;
+    padding: 73px 0 36px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 43px;
+}
+
+.headingDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.heading {
+    color: #ffffff;
+    font-size: var(--fs-34);
+    font-weight: 400;
+    font-family: var(--font-pretendard);
+    margin: 0;
+}
+
+.description {
+    max-width: 900px;
+    color: #F8F8F8;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: var(--font-pretendard);
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+.ctaButton {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 83px;
+    padding: 14px 15px 14px 20px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.ctaText {
+    font-size: 23px;
+    font-weight: 400;
+    color: #000000;
+    font-family: var(--font-pretendard);
+    white-space: nowrap;
+}
+
+.ctaArrow {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.ctaButton:hover .ctaArrow {
+    background-color: #F2C40D;
+}
+
+.ctaArrow svg {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.3s ease;
+}
+
+
+.ctaButton:hover .ctaArrow {
+    background-color: #F2C40D;
+}
+
+.ctaArrow svg {
+    width: 11px;
+    height: 11px;
+    transition: transform 0.3s ease;
+}
+
+.ctaButton:hover .ctaArrow svg {
+    transform: rotate(45deg);
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 80px 24px 0px 24px;
+    }
+
+    .card {
+        padding: 38px 24px;
+    }
+
+    .content {
+        gap: 27px;
+    }
+
+    .headingDesc {
+        gap: 20px;
+    }
+
+    .heading {
+        font-size: 26px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .ctaButton {
+        padding: 5.5px 7px 5.5px 15.44px;
+    }
+
+    .ctaText {
+        font-size: 18px;
+    }
+
+    .ctaArrow svg {
+        width: 12px;
+        height: 12px;
+    }
+}

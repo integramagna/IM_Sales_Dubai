@@ -1,0 +1,124 @@
+.main {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #000000;
+    padding: 120px clamp(24px, 13vw, 250px) 120px clamp(24px, 16vw, 300px);
+    display: flex;
+    justify-content: center;
+}
+
+.Mainconatiner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.top h4 {
+    font-family: var(--font-awesome-serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: var(--fs-34);
+    color: #ffffff;
+    margin: 0;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 48px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.num h2 {
+    font-family: var(--font-pretendard);
+    font-weight: 700;
+    font-size: var(--fs-72);
+    line-height: 1;
+    margin: 0;
+    background: linear-gradient(180deg, #D2AC59 0%, rgba(125, 125, 125, 0) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content h3 {
+    font-family: var(--font-pretendard);
+    font-weight: 400;
+    font-size: 24px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.content h4 {
+    font-family: var(--font-pretendard);
+    font-weight: 400;
+    font-size: 20px;
+    color: #848484;
+    margin: 0;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 80px 24px 0px;
+    }
+
+    .Mainconatiner {
+        gap: 30px;
+    }
+
+    .top {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .top h4 {
+        font-size: 26px;
+    }
+
+    .bottom {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .card {
+        gap: 34px;
+        flex-direction: row;
+
+    }
+
+    .num h2 {
+        font-size: 72px;
+    }
+
+    .content {
+        gap: 14px;
+    }
+
+    .content h3 {
+        font-size: 20px;
+    }
+
+    .content h4 {
+        font-size: 16px;
+    }
+}

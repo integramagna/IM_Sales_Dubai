@@ -7,7 +7,7 @@ import imageLinks from './imageLinks'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'Thank You | Integra Magna',
+  title: 'Thank You | Rabtora Signage',
   robots: { index: false, follow: false },
 }
 
@@ -22,7 +22,7 @@ export default function ThankYouPage() {
       .sort()
       .map((f) => ({
         src: `/assets/images/thankyouimages/${f}`,
-        url: (imageLinks as Record<string, string>)[f] ?? 'https://integramagna.com',
+        url: (imageLinks as Record<string, string>)[f] ?? 'https://rabtora.ae',
       }))
   } catch {
     images = []
