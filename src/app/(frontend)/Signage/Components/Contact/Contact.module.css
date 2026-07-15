@@ -5,7 +5,7 @@
     width: 100%;
     background-color: #000000;
     box-sizing: border-box;
-    padding: 120px 250px 0px 300px;
+    padding: 120px clamp(24px, 13vw, 250px) 0px clamp(24px, 16vw, 300px);
 }
 
 .MainContainer {
