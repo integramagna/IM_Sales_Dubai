@@ -14,13 +14,37 @@ import img10 from './10.webp'
 const topRow = [img1, img2, img3, img4, img5]
 const bottomRow = [img6, img7, img8, img9, img10]
 
+const desktopTopRow = [img1, img2, img3, img4]
+const desktopBottomRow = [img5, img6, img7, img8]
+
 const BottomImageScrool = () => {
   const topDoubled = [...topRow, ...topRow]
   const bottomDoubled = [...bottomRow, ...bottomRow]
 
   return (
     <div className={styles.main}>
-      <div className={styles.row}>
+      {/* Desktop: static, no animation */}
+      <div className={styles.desktopRow}>
+        <div className={styles.staticTrack}>
+          {desktopTopRow.map((img, i) => (
+            <div key={i} className={styles.imageWrap}>
+              <img src={img.src} alt="Signage project" className={styles.image} loading="lazy" />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className={styles.desktopRow}>
+        <div className={styles.staticTrack}>
+          {desktopBottomRow.map((img, i) => (
+            <div key={i} className={styles.imageWrap}>
+              <img src={img.src} alt="Signage project" className={styles.image} loading="lazy" />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Mobile: animated marquee */}
+      <div className={styles.mobileRow}>
         <div className={`${styles.track} ${styles.trackRight}`}>
           {topDoubled.map((img, i) => (
             <div key={i} className={styles.imageWrap}>
@@ -29,7 +53,7 @@ const BottomImageScrool = () => {
           ))}
         </div>
       </div>
-      <div className={styles.row}>
+      <div className={styles.mobileRow}>
         <div className={`${styles.track} ${styles.trackLeft}`}>
           {bottomDoubled.map((img, i) => (
             <div key={i} className={styles.imageWrap}>

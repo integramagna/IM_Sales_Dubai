@@ -9,9 +9,23 @@
     overflow: hidden;
 }
 
-.row {
+.desktopRow {
     width: 100%;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
+}
+
+.staticTrack {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+}
+
+.mobileRow {
+    display: none;
 }
 
 .track {
@@ -62,6 +76,16 @@
     .main {
         padding: 80px 0;
         gap: 23px;
+    }
+
+    .desktopRow {
+        display: none;
+    }
+
+    .mobileRow {
+        display: block;
+        width: 100%;
+        overflow: hidden;
     }
 
     .track {

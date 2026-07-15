@@ -112,17 +112,18 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: #FFFFFF5E;
     border: none;
     padding: 0;
     cursor: pointer;
-    transition: width 0.3s ease, border-radius 0.3s ease;
+    transition: width 0.3s ease, border-radius 0.3s ease, background-color 0.3s ease;
 }
 
 .pillActive {
     width: 60px;
     height: 8px;
     border-radius: 44px;
+    background-color: #ffffff;
 }
 
 .textCta {
@@ -191,6 +192,11 @@
         padding: 20px 24px 0px 24px;
     }
 
+    .slideImage {
+        height: 342px;
+        object-fit: contain;
+    }
+
     .MainContainer {
         gap: 30px;
     }
@@ -237,15 +243,15 @@
         gap: 30px;
     }
 
+    .pill {
+        width: 6px;
+        height: 6px;
+    }
+
     .pillActive {
         width: 45px;
         height: 6px;
         border-radius: 44px;
-    }
-
-    .pill {
-        width: 6px;
-        height: 6px;
     }
 
     .textCta {
