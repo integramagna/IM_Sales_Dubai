@@ -142,6 +142,7 @@ function Header() {
           </a>
         </div>
       </div>
+      <div className={styles.headerSpacer} />
     </>
   )
 }
